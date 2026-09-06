@@ -112,8 +112,6 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
       "Everything in Silver",
       "Bi-weekly video calls",
       "Priority same-day messaging",
-      "Quarterly progress shoot",
-      "Supplement & lab guidance",
       "Event & travel training plans",
     ],
     cta: "Get Started",
