@@ -18,6 +18,7 @@ export default function FestivePackagePage() {
         eyebrow={FESTIVE_PACKAGE.eyebrow}
         title={FESTIVE_PACKAGE.title}
         description={FESTIVE_PACKAGE.description}
+        image="/festive-package-img.jpg"
       />
       <FestiveOffer />
       <section className="section-padding py-8 md:py-12 pb-24 md:pb-32 bg-black">
