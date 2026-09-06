@@ -1,156 +1,33 @@
-"use client";
-
-import { useState, type FormEvent } from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 
-const INTERESTS = [
-  "1-to-1 Personal Training",
-  "Online Coaching",
-  "Upcoming Events",
-  "Not Sure Yet",
-];
+const BOOKING_URL =
+  "https://kahunas.io/contact/person_info/9a363a9e-66ad-44a9-a2a9-c12a077d5592";
 
 export function BookingForm() {
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [interest, setInterest] = useState(INTERESTS[0]);
-
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setError(null);
-    setSubmitting(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          phone: formData.get("phone"),
-          interest,
-          message: formData.get("message"),
-        }),
-      });
-
-      const data = await res.json().catch(() => ({}));
-
-      if (!res.ok) {
-        throw new Error(data?.error || "Something went wrong. Please try again.");
-      }
-
-      setSubmitted(true);
-    } catch (err) {
-      setError(
-        err instanceof Error
-          ? err.message
-          : "Something went wrong. Please try again."
-      );
-    } finally {
-      setSubmitting(false);
-    }
-  }
-
   return (
     <section className="section-padding py-24 md:py-32 bg-black">
       <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
         <Reveal className="lg:col-span-3">
-          {submitted ? (
-            <div className="glass rounded-sm p-10 text-center h-full flex flex-col items-center justify-center">
-              <span className="font-display text-3xl text-gold mb-3">
-                Thank you
-              </span>
-              <p className="text-ivory/70 max-w-sm">
-                Your enquiry has been received. Debs will personally reach out
-                within 24 hours to schedule your free consultation.
-              </p>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col gap-5 bg-charcoal/50 border border-white/10 rounded-sm p-8 md:p-10"
+          <div className="flex flex-col justify-center h-full gap-6 bg-charcoal/50 border border-white/10 rounded-sm p-8 md:p-10">
+            <h3 className="font-display text-2xl md:text-3xl text-ivory">
+              Ready to get started?
+            </h3>
+            <p className="text-ivory/70 leading-relaxed">
+              Book your free consultation directly through our online
+              booking system. Tell us a little about your goals and
+              we&apos;ll be in touch within 24 hours to find the right
+              programme for you.
+            </p>
+            <Button
+              render={<a href={BOOKING_URL} target="_blank" rel="noreferrer" />}
+              nativeButton={false}
+              className="mt-2 w-fit rounded-none bg-gold text-black hover:bg-gold-light uppercase text-xs tracking-[0.15em] h-12 px-8"
             >
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="name" className="text-xs uppercase tracking-wide text-ivory/70">
-                    Full Name
-                  </Label>
-                  <Input id="name" name="name" required placeholder="Jane Doe" className="h-11 rounded-none border-white/15" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="email" className="text-xs uppercase tracking-wide text-ivory/70">
-                    Email
-                  </Label>
-                  <Input id="email" name="email" type="email" required placeholder="jane@email.com" className="h-11 rounded-none border-white/15" />
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="phone" className="text-xs uppercase tracking-wide text-ivory/70">
-                  Phone (optional)
-                </Label>
-                <Input id="phone" name="phone" type="tel" placeholder="+44 7700 900000" className="h-11 rounded-none border-white/15" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <Label className="text-xs uppercase tracking-wide text-ivory/70">
-                  I&apos;m interested in
-                </Label>
-                <div className="flex flex-wrap gap-2">
-                  {INTERESTS.map((item) => (
-                    <button
-                      type="button"
-                      key={item}
-                      onClick={() => setInterest(item)}
-                      className={`px-4 py-2 text-xs uppercase tracking-wide border transition-colors ${
-                        interest === item
-                          ? "bg-gold text-black border-gold"
-                          : "border-white/20 text-ivory/70 hover:border-gold/50"
-                      }`}
-                    >
-                      {item}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="message" className="text-xs uppercase tracking-wide text-ivory/70">
-                  Tell us about your goals
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="I'd like to..."
-                  className="rounded-none border-white/15 resize-none"
-                />
-              </div>
-
-              {error && (
-                <p className="text-sm text-red-400" role="alert">
-                  {error}
-                </p>
-              )}
-
-              <Button
-                type="submit"
-                disabled={submitting}
-                className="mt-2 rounded-none bg-gold text-black hover:bg-gold-light uppercase text-xs tracking-[0.15em] h-12 disabled:opacity-60"
-              >
-                {submitting ? "Sending..." : "Send Enquiry"}
-              </Button>
-            </form>
-          )}
+              Book Your Free Consultation <ArrowRight className="size-4" />
+            </Button>
+          </div>
         </Reveal>
 
         <Reveal delay={0.15} className="lg:col-span-2">
