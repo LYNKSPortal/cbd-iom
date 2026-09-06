@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,27 @@ export function BookingForm() {
               we&apos;ll be in touch within 24 hours to find the right
               programme for you.
             </p>
+
+            <div className="flex items-center gap-3">
+              <Image
+                src="/kah-logo.png"
+                alt="Kahunas"
+                width={380}
+                height={75}
+                className="h-6 w-auto opacity-80"
+              />
+              <span className="text-xs uppercase tracking-wide text-ivory/40">
+                Secure Online Booking
+              </span>
+            </div>
+
+            <p className="text-ivory/70 leading-relaxed">
+              Our booking system lets you pick a time that suits you,
+              complete a quick intake form, and get instant confirmation —
+              no back-and-forth emails required. Your details are kept
+              secure and only used to prepare for your consultation.
+            </p>
+
             <Button
               render={<a href={BOOKING_URL} target="_blank" rel="noreferrer" />}
               nativeButton={false}
