@@ -28,6 +28,7 @@ export default function ContactPage() {
         eyebrow="Get In Touch"
         title="Book your free consultation"
         description="Tell us a little about your goals and we'll be in touch within 24 hours to find the right programme for you."
+        muxPlaybackId="NT9qRgtyqMPbwET5hoUl0215njaa3sRT01N02hiWcWXfDI"
       />
       <BookingForm />
       <SocialNewsletter />
