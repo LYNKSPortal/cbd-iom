@@ -28,8 +28,8 @@ const SERVICES = [
   {
     icon: Sparkles,
     label: "Client Results",
-    blurb: "Real transformations from real women, in their own words.",
-    meta: "250+ women coached",
+    blurb: "Real transformations from real clients, in their own words.",
+    meta: "250+ clients coached",
     href: "/results",
   },
 ];

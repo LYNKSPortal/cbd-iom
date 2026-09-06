@@ -20,7 +20,7 @@ export function AboutTeaser() {
           <div className="hidden md:block absolute -bottom-6 -right-6 lg:right-auto lg:-left-6 glass px-7 py-5 rounded-sm">
             <div className="font-display text-3xl text-gold">250+</div>
             <div className="text-[11px] uppercase tracking-[0.15em] text-ivory/70 mt-1">
-              Women Transformed
+              Clients Transformed
             </div>
           </div>
         </Reveal>
@@ -40,8 +40,8 @@ export function AboutTeaser() {
           <Reveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-ivory/70 leading-relaxed">
               I&apos;m Debs — a personal trainer and coach dedicated to
-              helping women build strength and confidence without extreme
-              diets or unsustainable routines. Every plan I write is
+              helping men and women build strength and confidence without
+              extreme diets or unsustainable routines. Every plan I write is
               personal, evidence-based, and designed to fit your life.
             </p>
           </Reveal>

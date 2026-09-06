@@ -12,20 +12,27 @@ export function UpcomingEvents({
   limit,
   eyebrow = "Upcoming Events",
   title = "Join us in person or online",
-  description = "Live masterclasses, challenges, and retreats designed to accelerate your progress and connect you with a community of women just like you.",
+  description = "Live masterclasses, challenges, and retreats designed to accelerate your progress and connect you with a community of people just like you.",
   footerCta,
+  headingLevel = "h2",
 }: {
   limit?: number;
   eyebrow?: string;
   title?: string;
   description?: string;
   footerCta?: { href: string; label: string };
+  headingLevel?: "h1" | "h2";
 }) {
   const events = limit ? UPCOMING_EVENTS.slice(0, limit) : UPCOMING_EVENTS;
 
   return (
     <section className="section-padding py-24 md:py-32 bg-black">
-      <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+      <SectionHeading
+        eyebrow={eyebrow}
+        title={title}
+        description={description}
+        headingLevel={headingLevel}
+      />
 
       <div className="mt-16 flex flex-col gap-6 lg:gap-8 max-w-5xl mx-auto">
         {events.map((event, i) => (

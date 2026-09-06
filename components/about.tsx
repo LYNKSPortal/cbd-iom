@@ -27,7 +27,7 @@ export function About() {
           <div className="hidden md:block absolute -bottom-6 -right-6 lg:right-auto lg:-left-6 glass px-7 py-5 rounded-sm">
             <div className="font-display text-3xl text-gold">250+</div>
             <div className="text-[11px] uppercase tracking-[0.15em] text-ivory/70 mt-1">
-              Women Transformed
+              Clients Transformed
             </div>
           </div>
         </Reveal>
@@ -40,19 +40,19 @@ export function About() {
             </span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display mt-4 text-4xl md:text-5xl font-medium leading-[1.05] text-ivory">
+            <h1 className="font-display mt-4 text-4xl md:text-5xl font-medium leading-[1.05] text-ivory">
               Coaching built on honesty, science, and real life
-            </h2>
+            </h1>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-ivory/70 leading-relaxed">
               I&apos;m Debs — a personal trainer and coach dedicated to
-              helping women build strength and confidence without extreme
-              diets or unsustainable routines. After a decade of coaching
-              hundreds of women through pregnancy, menopause, injury, and
-              everything in between, I built Coached by Debs around one
-              belief: your programme should fit your life, not the other way
-              around.
+              helping men and women build strength and confidence without
+              extreme diets or unsustainable routines. After a decade of
+              coaching hundreds of clients through pregnancy, menopause,
+              injury, and everything in between, I built Coached by Debs
+              around one belief: your programme should fit your life, not
+              the other way around.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

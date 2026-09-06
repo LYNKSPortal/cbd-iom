@@ -12,7 +12,7 @@ export default function FAQPage() {
   return (
     <>
       <div className="pt-32" />
-      <FAQ />
+      <FAQ headingLevel="h1" />
       <FinalCTA />
     </>
   );

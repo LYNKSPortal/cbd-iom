@@ -8,7 +8,7 @@ export function TransformationGallery({
   limit,
   eyebrow = "Transformation Gallery",
   title = "Progress you can see",
-  description = "A snapshot of the women who've trained, transformed, and built lasting confidence with Coached by Debs.",
+  description = "A snapshot of the clients who've trained, transformed, and built lasting confidence with Coached by Debs.",
   footerCta,
 }: {
   limit?: number;

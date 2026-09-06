@@ -6,14 +6,14 @@ import { FinalCTA } from "@/components/final-cta";
 export const metadata: Metadata = {
   title: "Client Results",
   description:
-    "Real transformations from real women — hear directly from clients of Coached by Debs.",
+    "Real transformations from real clients — hear directly from the men and women who've trained with Coached by Debs.",
 };
 
 export default function ResultsPage() {
   return (
     <>
       <div className="pt-32" />
-      <Testimonials />
+      <Testimonials headingLevel="h1" />
       <TransformationGallery />
       <FinalCTA />
     </>

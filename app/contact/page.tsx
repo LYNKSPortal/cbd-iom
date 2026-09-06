@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <>
       <div className="pt-32" />
-      <BookingForm />
+      <BookingForm headingLevel="h1" />
       <SocialNewsletter />
     </>
   );

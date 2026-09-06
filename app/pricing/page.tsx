@@ -17,6 +17,7 @@ export default function PricingPage() {
       <PersonalTraining
         eyebrow="1-to-1 Personal Training"
         title="In-person coaching packages"
+        headingLevel="h1"
       />
       <OnlineCoaching
         eyebrow="Online Coaching"

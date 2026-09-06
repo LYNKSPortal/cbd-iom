@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { NavBar } from "@/components/nav-bar";
 import { Footer } from "@/components/footer";
+import { JsonLd } from "@/components/json-ld";
+import { getOrganizationSchema, getWebSiteSchema } from "@/lib/structured-data";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -24,11 +26,11 @@ export const metadata: Metadata = {
     template: "%s | Coached by Debs",
   },
   description:
-    "Premium 1-to-1 personal training and online coaching for women who want strength, confidence, and sustainable results. Bespoke programs, weekly accountability, real transformations.",
+    "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident. Bespoke programs, weekly accountability, real transformations.",
   keywords: [
     "personal trainer",
     "online coaching",
-    "women's fitness coaching",
+    "fitness coaching",
     "luxury personal training",
     "transformation coaching",
     "Coached by Debs",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Coached by Debs | Luxury Personal Training & Online Coaching",
     description:
-      "Premium 1-to-1 personal training and online coaching for women who want strength, confidence, and sustainable results.",
+      "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident.",
     url: "https://www.coachedbydebs.com",
     siteName: "Coached by Debs",
     locale: "en_GB",
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coached by Debs | Luxury Personal Training & Online Coaching",
     description:
-      "Premium 1-to-1 personal training and online coaching for women who want strength, confidence, and sustainable results.",
+      "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident.",
     images: ["/favicons/facebook-meta-og-image.jpg"],
   },
   robots: {
@@ -87,6 +89,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <JsonLd data={[getOrganizationSchema(), getWebSiteSchema()]} />
         <NavBar />
         <main className="flex-1 bg-black">{children}</main>
         <Footer />

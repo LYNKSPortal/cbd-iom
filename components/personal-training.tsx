@@ -9,12 +9,14 @@ export function PersonalTraining({
   title = "Hands-on coaching, built entirely around you",
   description = "In-studio or outdoors, every session is designed around your goals, your body, and your schedule.",
   footerCta,
+  headingLevel = "h2",
 }: {
   limit?: number;
   eyebrow?: string;
   title?: string;
   description?: string;
   footerCta?: { href: string; label: string };
+  headingLevel?: "h1" | "h2";
 }) {
   const packages = limit
     ? PERSONAL_TRAINING_PACKAGES.slice(0, limit)
@@ -22,7 +24,12 @@ export function PersonalTraining({
 
   return (
     <section className="section-padding py-24 md:py-32 bg-black">
-      <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+      <SectionHeading
+        eyebrow={eyebrow}
+        title={title}
+        description={description}
+        headingLevel={headingLevel}
+      />
 
       <div className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
         {packages.map((pkg, i) => (

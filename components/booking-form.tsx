@@ -16,7 +16,11 @@ const INTERESTS = [
   "Not Sure Yet",
 ];
 
-export function BookingForm() {
+export function BookingForm({
+  headingLevel = "h2",
+}: {
+  headingLevel?: "h1" | "h2";
+}) {
   const [submitted, setSubmitted] = useState(false);
   const [interest, setInterest] = useState(INTERESTS[0]);
 
@@ -31,6 +35,7 @@ export function BookingForm() {
         eyebrow="Get In Touch"
         title="Book your free consultation"
         description="Tell us a little about your goals and we'll be in touch within 24 hours to find the right programme for you."
+        headingLevel={headingLevel}
       />
 
       <div className="mt-16 grid lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
@@ -127,9 +132,9 @@ export function BookingForm() {
                 <Mail className="size-4 text-gold" />
                 hello@coachedbydebs.com
               </a>
-              <a href="tel:+441624000000" className="flex items-center gap-3 hover:text-gold transition-colors">
+              <a href="tel:+447624220294" className="flex items-center gap-3 hover:text-gold transition-colors">
                 <Phone className="size-4 text-gold" />
-                +44 1624 000 000
+                +44 76 2422 0294
               </a>
               <span className="flex items-center gap-3">
                 <MapPin className="size-4 text-gold" />

@@ -12,7 +12,7 @@ export default function EventsPage() {
   return (
     <>
       <div className="pt-32" />
-      <UpcomingEvents />
+      <UpcomingEvents headingLevel="h1" />
       <FinalCTA />
     </>
   );

@@ -8,6 +8,7 @@ export function SectionHeading({
   align = "center",
   className,
   light,
+  headingLevel = "h2",
 }: {
   eyebrow?: string;
   title: string;
@@ -15,7 +16,10 @@ export function SectionHeading({
   align?: "center" | "left";
   className?: string;
   light?: boolean;
+  headingLevel?: "h1" | "h2";
 }) {
+  const HeadingTag = headingLevel;
+
   return (
     <div
       className={cn(
@@ -34,14 +38,14 @@ export function SectionHeading({
         </Reveal>
       )}
       <Reveal delay={0.1}>
-        <h2
+        <HeadingTag
           className={cn(
             "font-display mt-4 text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.05] text-balance-pretty",
             light ? "text-ivory" : "text-foreground"
           )}
         >
           {title}
-        </h2>
+        </HeadingTag>
       </Reveal>
       {description && (
         <Reveal delay={0.2}>

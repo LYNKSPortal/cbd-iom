@@ -11,7 +11,7 @@ export function ResultsTeaser() {
     <section className="section-padding py-24 md:py-32 bg-charcoal/30">
       <SectionHeading
         eyebrow="Client Transformations"
-        title="Real women. Real results."
+        title="Real people. Real results."
         description="The proof isn't in the promise — it's in the transformation."
       />
 

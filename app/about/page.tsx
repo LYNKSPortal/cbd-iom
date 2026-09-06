@@ -5,7 +5,7 @@ import { FinalCTA } from "@/components/final-cta";
 export const metadata: Metadata = {
   title: "About Debs",
   description:
-    "Meet Debs — certified personal trainer and coach with 10+ years of experience helping women build strength and confidence.",
+    "Meet Debs — certified personal trainer and coach with 10+ years of experience helping men and women build strength and confidence.",
 };
 
 export default function AboutPage() {

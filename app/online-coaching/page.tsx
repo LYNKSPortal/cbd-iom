@@ -13,7 +13,7 @@ export default function OnlineCoachingPage() {
   return (
     <>
       <div className="pt-32" />
-      <OnlineCoaching />
+      <OnlineCoaching headingLevel="h1" />
       <PricingComparison />
       <FinalCTA />
     </>

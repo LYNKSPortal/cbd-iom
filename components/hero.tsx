@@ -54,7 +54,7 @@ export function Hero() {
           className="mt-6 max-w-xl text-base md:text-lg text-ivory/75 leading-relaxed"
         >
           Bespoke 1-to-1 personal training and online coaching, crafted for
-          women who want a sustainable transformation — not a quick fix.
+          anyone who wants a sustainable transformation — not a quick fix.
         </motion.p>
 
         <motion.div

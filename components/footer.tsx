@@ -24,8 +24,8 @@ export function Footer() {
             />
           </Link>
           <p className="mt-5 text-sm text-ivory/60 leading-relaxed max-w-sm">
-            Luxury personal training and online coaching for women who want
-            strength, confidence, and sustainable results — built entirely
+            Luxury personal training and online coaching for anyone who wants
+            to get fitter, healthier, and more confident — built entirely
             around your life.
           </p>
           <div className="flex items-center gap-4 mt-6">
@@ -67,8 +67,16 @@ export function Footer() {
             Contact
           </h4>
           <ul className="flex flex-col gap-3 text-sm text-ivory/70">
-            <li>hello@coachedbydebs.com</li>
-            <li>+44 1624 000 000</li>
+            <li>
+              <a href="mailto:hello@coachedbydebs.com" className="hover:text-gold transition-colors">
+                hello@coachedbydebs.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+447624220294" className="hover:text-gold transition-colors">
+                +44 76 2422 0294
+              </a>
+            </li>
             <li>Isle of Man &amp; Worldwide</li>
             <li className="pt-2 text-xs text-ivory/40">IOM Registry: 031470B</li>
           </ul>

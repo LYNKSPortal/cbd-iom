@@ -9,12 +9,14 @@ export function OnlineCoaching({
   title = "Bespoke coaching, wherever you are",
   description = "Training plans, nutrition guidance, and weekly accountability — delivered straight to your phone. Choose the level of support that fits your life.",
   footerCta,
+  headingLevel = "h2",
 }: {
   limit?: number;
   eyebrow?: string;
   title?: string;
   description?: string;
   footerCta?: { href: string; label: string };
+  headingLevel?: "h1" | "h2";
 }) {
   const packages = limit
     ? ONLINE_COACHING_PACKAGES.slice(0, limit)
@@ -22,7 +24,12 @@ export function OnlineCoaching({
 
   return (
     <section className="section-padding py-24 md:py-32 bg-gradient-to-b from-black via-charcoal/40 to-black">
-      <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+      <SectionHeading
+        eyebrow={eyebrow}
+        title={title}
+        description={description}
+        headingLevel={headingLevel}
+      />
 
       <div className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
         {packages.map((pkg, i) => (
