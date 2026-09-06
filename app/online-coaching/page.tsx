@@ -29,6 +29,7 @@ export default function OnlineCoachingPage() {
         eyebrow="Online Coaching"
         title="Bespoke coaching, wherever you are"
         description="Training plans, nutrition guidance, and weekly accountability, delivered straight to your phone."
+        muxPlaybackId="AUMzgM9VUIXc4249ZcO9i5jVIBgUtJRaH7gi6m8N8Xc"
       />
       <OnlineCoaching
         eyebrow="Packages"
