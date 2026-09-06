@@ -1,29 +1,18 @@
-import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { ServicesOverview } from "@/components/services-overview";
 import { ResultsTeaser } from "@/components/results-teaser";
 import { TransformationGallery } from "@/components/transformation-gallery";
 import { AboutTeaser } from "@/components/about-teaser";
 import { FinalCTA } from "@/components/final-cta";
+import { pageMetadata } from "@/lib/seo";
 
-const TITLE = "Coached by Debs | Luxury Personal Training & Online Coaching";
-const DESCRIPTION =
-  "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident. Bespoke programmes, weekly accountability, real transformations.";
-
-export const metadata: Metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: "/",
-  },
-  twitter: {
-    title: TITLE,
-    description: DESCRIPTION,
-  },
-};
+export const metadata = pageMetadata({
+  title: "Coached by Debs | Luxury Personal Training & Online Coaching",
+  description:
+    "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident. Bespoke programmes, weekly accountability, real transformations.",
+  path: "/",
+  isHome: true,
+});
 
 export default function Home() {
   return (
