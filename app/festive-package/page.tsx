@@ -6,7 +6,7 @@ import { FESTIVE_PACKAGE } from "@/lib/site-data";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Festive Transformation Package",
+  title: "8-Week Festive Shred",
   description: FESTIVE_PACKAGE.description,
   path: "/festive-package",
 });
@@ -24,8 +24,8 @@ export default function FestivePackagePage() {
       <section className="section-padding py-8 md:py-12 pb-24 md:pb-32 bg-black">
         <SectionHeading
           eyebrow="Claim Your Spot"
-          title="Reserve your festive package"
-          description="Fill in your details below and we'll be in touch to get you booked in."
+          title="Who's joining me?"
+          description="Fill in your details below and we'll be in touch to get you booked in before we kick off on 1st October."
         />
         <div className="mt-14">
           <FestiveForm />

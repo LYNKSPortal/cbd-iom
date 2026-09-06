@@ -65,8 +65,9 @@ export function FestiveForm() {
             You&apos;re in!
           </span>
           <p className="text-ivory/70">
-            Thanks for claiming your spot on the Festive Transformation
-            Package. We&apos;ll be in touch shortly with next steps.
+            Thanks for claiming your spot on the 8-Week Festive Shred.
+            We&apos;ll be in touch shortly with next steps ahead of the
+            1st October start date.
           </p>
         </div>
       </Reveal>
