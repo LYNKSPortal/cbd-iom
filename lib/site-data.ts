@@ -49,7 +49,7 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
     description:
       "A focused block designed to build momentum, correct form, and deliver visible results fast.",
     features: [
-      "8 x 60-minute 1-to-1 sessions",
+      "8 x 45-minute 1-to-1 sessions",
       "Custom training programme",
       "Nutrition starter guide",
       "Progress tracking & photos",
