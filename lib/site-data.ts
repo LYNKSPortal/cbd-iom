@@ -124,7 +124,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     description: "Our most exclusive tier — unlimited access to Debs for total accountability.",
     features: [
       "Everything in Gold",
-      "Check-ins twice a week",
+      "Check-ins Twice Per Week",
       "Monthly video calls",
       "Personal WhatsApp accountability line",
     ],
