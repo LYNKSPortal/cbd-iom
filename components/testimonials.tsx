@@ -26,7 +26,7 @@ export function Testimonials() {
   const testimonial = TESTIMONIALS[index];
 
   return (
-    <section className="section-padding py-24 md:py-32 bg-charcoal/30">
+    <section className="section-padding py-24 md:py-32 bg-black">
       <div className="relative max-w-3xl mx-auto">
         <div className="relative min-h-[280px] md:min-h-[240px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait" custom={direction}>
