@@ -263,3 +263,21 @@ export const SOCIAL_LINKS = [
   { label: "TikTok", href: "https://tiktok.com/@coachedbydebs", handle: "@coachedbydebs" },
   { label: "Facebook", href: "https://facebook.com/coachedbydebs", handle: "Coached by Debs" },
 ];
+
+// Placeholder copy — edit freely once real festive offer details are confirmed.
+export const FESTIVE_PACKAGE = {
+  eyebrow: "Limited Time — Festive Offer",
+  title: "The Festive Transformation Package",
+  description:
+    "Start the new year strong. A limited-availability festive package combining 1-to-1 coaching, nutrition support, and accountability to help you head into January feeling your best.",
+  price: "£199",
+  cadence: "/ festive package",
+  features: [
+    "4 x 1-to-1 personal training sessions",
+    "Festive nutrition & survival guide",
+    "Bonus New Year check-in call",
+    "Exclusive festive-only pricing",
+    "Priority booking into January programmes",
+  ],
+  availability: "Limited spots — offer ends 31st December",
+};
