@@ -29,16 +29,16 @@ export type Package = {
 export const PERSONAL_TRAINING_PACKAGES: Package[] = [
   {
     name: "Single Session",
-    price: "£65",
+    price: "£45.00",
     cadence: "per session",
     description:
       "A one-off, fully bespoke training session — perfect for a trial or a top-up between programs.",
     features: [
-      "60-minute 1-to-1 session",
+      "45-minute 1-to-1 session",
       "Movement & posture assessment",
       "Personalised exercise selection",
-      "Studio or outdoor training",
-      "Post-session notes",
+      "GYM training",
+      "Post-session feedback",
     ],
     cta: "Book a Session",
   },
