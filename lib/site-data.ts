@@ -90,7 +90,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
   },
   {
     name: "Silver",
-    price: "£179",
+    price: "£95",
     cadence: "/ month",
     description: "Our most popular plan — training, nutrition, and weekly accountability.",
     features: [
