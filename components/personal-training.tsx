@@ -7,7 +7,7 @@ export function PersonalTraining({
   limit,
   eyebrow = "1-to-1 Personal Training",
   title = "Hands-on coaching, built entirely around you",
-  description = "In-studio or outdoors, every session is designed around your goals, your body, and your schedule.",
+  description = "Every session is designed around your goals, your body, and your schedule.",
   footerCta,
   headingLevel = "h2",
 }: {
