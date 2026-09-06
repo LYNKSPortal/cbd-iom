@@ -44,7 +44,7 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
   },
   {
     name: "8-Session Transformation",
-    price: "£4360",
+    price: "£360",
     cadence: "/ 8 sessions",
     description:
       "A focused block designed to build momentum, correct form, and deliver visible results fast.",
