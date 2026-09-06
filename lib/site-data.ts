@@ -96,7 +96,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     features: [
       "Everything in Bronze",
       "Personalised nutrition plan",
-      "Weekly check-ins & adjustments",
+      "Monthly check-in",
       "Direct messaging with Debs",
       "Habit & recovery tracking",
     ],
@@ -110,6 +110,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     description: "Fully white-glove coaching for those who want the very best support.",
     features: [
       "Everything in Silver",
+      "Weekly check-ins",
       "Bi-weekly video calls",
       "Priority same-day messaging",
       "Event & travel training plans",
@@ -123,6 +124,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     description: "Our most exclusive tier — unlimited access to Debs for total accountability.",
     features: [
       "Everything in Gold",
+      "Check-ins twice a week",
       "Weekly video calls",
       "Monthly in-person session",
       "Personal WhatsApp accountability line",
