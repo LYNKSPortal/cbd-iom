@@ -28,6 +28,7 @@ export default function EventsPage() {
         eyebrow="Upcoming Events"
         title="Join us in person or online"
         description="Live masterclasses, challenges, and retreats designed to accelerate your progress and connect you with a community of people just like you."
+        muxPlaybackId="00IRw7bFkAFNkCvIOg9Z02Jf0200Ez7K5DwLT77ZYUjioRI"
       />
       <UpcomingEvents
         eyebrow="What's On"
