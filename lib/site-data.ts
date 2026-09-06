@@ -105,7 +105,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
   },
   {
     name: "Gold",
-    price: "£275",
+    price: "£175",
     cadence: "/ month",
     description: "Fully white-glove coaching for those who want the very best support.",
     features: [
