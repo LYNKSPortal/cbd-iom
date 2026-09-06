@@ -8,14 +8,14 @@ const SERVICES = [
     icon: Dumbbell,
     label: "1-to-1 Personal Training",
     blurb: "Hands-on, in-studio or outdoor coaching, tailored session by session.",
-    meta: "From £65 / session",
+    meta: "From £50 / session",
     href: "/personal-training",
   },
   {
     icon: Smartphone,
     label: "Online Coaching",
     blurb: "Bespoke training and nutrition plans with weekly accountability, anywhere.",
-    meta: "From £99 / month",
+    meta: "From £25 / month",
     href: "/online-coaching",
   },
   {

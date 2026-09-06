@@ -29,7 +29,7 @@ export function getOrganizationSchema() {
     image: `${SITE_URL}/favicons/facebook-meta-og-image.jpg`,
     description:
       "Premium 1-to-1 personal training and online coaching for anyone who wants to get fitter, healthier, and more confident, based on the Isle of Man and serving clients worldwide online.",
-    priceRange: "£65-£1350",
+    priceRange: "£25-£480",
     areaServed: [
       { "@type": "Place", name: "Isle of Man" },
       { "@type": "Place", name: "Worldwide (Online Coaching)" },

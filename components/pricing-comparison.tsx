@@ -7,9 +7,10 @@ import { Button } from "@/components/ui/button";
 type PlanKey = "bronze" | "silver" | "gold" | "platinum";
 
 const ROWS: ({ label: string } & Record<PlanKey, boolean>)[] = [
-  { label: "Custom training programme", bronze: true, silver: true, gold: true, platinum: true },
-  { label: "Exercise video library", bronze: true, silver: true, gold: true, platinum: true },
-  { label: "Monthly check-in", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "App access & progress logging", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "Whatsapp group chat", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "Generic training programme", bronze: true, silver: false, gold: false, platinum: false },
+  { label: "Personalised training plan", bronze: false, silver: true, gold: true, platinum: true },
   { label: "Personalised nutrition plan", bronze: false, silver: true, gold: true, platinum: true },
   { label: "Weekly check-ins & adjustments", bronze: false, silver: true, gold: true, platinum: true },
   { label: "Direct messaging with Debs", bronze: false, silver: true, gold: true, platinum: true },
@@ -24,7 +25,7 @@ const ROWS: ({ label: string } & Record<PlanKey, boolean>)[] = [
 ];
 
 const PLANS: { key: PlanKey; name: string; price: string; highlighted?: boolean }[] = [
-  { key: "bronze", name: "Bronze", price: "£99" },
+  { key: "bronze", name: "Bronze", price: "£25" },
   { key: "silver", name: "Silver", price: "£179", highlighted: true },
   { key: "gold", name: "Gold", price: "£299" },
   { key: "platinum", name: "Platinum", price: "£449" },

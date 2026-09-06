@@ -78,14 +78,13 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
 export const ONLINE_COACHING_PACKAGES: Package[] = [
   {
     name: "Bronze",
-    price: "£99",
+    price: "£25",
     cadence: "/ month",
     description: "Everything you need to start training with structure and purpose.",
     features: [
-      "Custom training plan (app-based)",
-      "Exercise video library",
-      "Monthly check-in",
-      "Private community access",
+      "Access to App (Log Progress)",
+      "Generic training Program",
+      "Whatsapp Group Chat",
     ],
     cta: "Get Started",
   },
