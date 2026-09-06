@@ -22,7 +22,7 @@ export function PageHero({
         {muxPlaybackId ? (
           <MuxBackgroundVideo
             playbackId={muxPlaybackId}
-            className="absolute inset-0 w-full h-full object-cover object-top scale-105"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
         ) : (
           <Image
