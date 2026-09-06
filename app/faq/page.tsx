@@ -28,6 +28,7 @@ export default function FAQPage() {
         eyebrow="FAQ"
         title="Questions, answered"
         description="Everything you need to know before getting started."
+        muxPlaybackId="0164QsBnRfhTFBzD5kAOjXWg3xAwr9FLeip3C5IpSyQw"
       />
       <FAQ />
       <FinalCTA />
