@@ -28,6 +28,7 @@ export default function AboutPage() {
         eyebrow="About Debs"
         title="Coaching built on honesty, science, and real life"
         description="Meet Debs — certified personal trainer and coach dedicated to helping men and women build strength and confidence."
+        muxPlaybackId="T3WPFqw2iVckDSktLPmFmrN2ncEB01fTMDVs5SzpexwI"
       />
       <About />
       <FinalCTA />
