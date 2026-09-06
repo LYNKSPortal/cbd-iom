@@ -9,7 +9,7 @@ import { FAQS } from "@/lib/site-data";
 
 export function FAQ() {
   return (
-    <section className="section-padding py-24 md:py-32 bg-charcoal/30">
+    <section className="section-padding py-24 md:py-32 bg-black">
       <Reveal delay={0.15} className="max-w-2xl mx-auto">
         <Accordion>
           {FAQS.map((faq, i) => (
