@@ -35,6 +35,7 @@ export default function PricingPage() {
         eyebrow="Pricing"
         title="Find the level of support that's right for you"
         description="Every Coached by Debs package — 1-to-1 personal training and online coaching — side by side, with full pricing and feature comparisons."
+        muxPlaybackId="q77h69BkoL00ZDycO256GqgRBYLLZPlygz6s1RZAc4Os"
       />
       <PersonalTraining
         eyebrow="1-to-1 Personal Training"
