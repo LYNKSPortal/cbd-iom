@@ -126,7 +126,6 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
       "Weekly video calls",
       "24/7 direct messaging access",
       "Monthly in-person session",
-      "Fully custom meal plans",
       "Personal WhatsApp accountability line",
     ],
     cta: "Get Started",
