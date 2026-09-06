@@ -16,7 +16,6 @@ const ROWS: ({ label: string } & Record<PlanKey, boolean>)[] = [
   { label: "Weekly check-in and Adjustments", bronze: false, silver: false, gold: true, platinum: true },
   { label: "Check-ins Twice Per Week", bronze: false, silver: false, gold: false, platinum: true },
   { label: "Direct messaging with Debs", bronze: false, silver: true, gold: true, platinum: true },
-  { label: "Bi-weekly video calls", bronze: false, silver: false, gold: true, platinum: true },
   { label: "Priority same-day messaging", bronze: false, silver: false, gold: true, platinum: true },
   { label: "Monthly video calls", bronze: false, silver: false, gold: false, platinum: true },
 ];

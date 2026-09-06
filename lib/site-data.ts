@@ -111,7 +111,6 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     features: [
       "Everything in Silver",
       "Weekly check-in and Adjustments",
-      "Bi-weekly video calls",
       "Priority same-day messaging",
       "Event & travel training plans",
     ],
