@@ -4,23 +4,30 @@ import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
-const ROWS: { label: string; bronze: boolean; silver: boolean; gold: boolean }[] = [
-  { label: "Custom training programme", bronze: true, silver: true, gold: true },
-  { label: "Exercise video library", bronze: true, silver: true, gold: true },
-  { label: "Monthly check-in", bronze: true, silver: true, gold: true },
-  { label: "Personalised nutrition plan", bronze: false, silver: true, gold: true },
-  { label: "Weekly check-ins & adjustments", bronze: false, silver: true, gold: true },
-  { label: "Direct messaging with Debs", bronze: false, silver: true, gold: true },
-  { label: "Bi-weekly video calls", bronze: false, silver: false, gold: true },
-  { label: "Priority same-day messaging", bronze: false, silver: false, gold: true },
-  { label: "Quarterly progress shoot", bronze: false, silver: false, gold: true },
-  { label: "Supplement & lab guidance", bronze: false, silver: false, gold: true },
+type PlanKey = "bronze" | "silver" | "gold" | "platinum";
+
+const ROWS: ({ label: string } & Record<PlanKey, boolean>)[] = [
+  { label: "Custom training programme", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "Exercise video library", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "Monthly check-in", bronze: true, silver: true, gold: true, platinum: true },
+  { label: "Personalised nutrition plan", bronze: false, silver: true, gold: true, platinum: true },
+  { label: "Weekly check-ins & adjustments", bronze: false, silver: true, gold: true, platinum: true },
+  { label: "Direct messaging with Debs", bronze: false, silver: true, gold: true, platinum: true },
+  { label: "Bi-weekly video calls", bronze: false, silver: false, gold: true, platinum: true },
+  { label: "Priority same-day messaging", bronze: false, silver: false, gold: true, platinum: true },
+  { label: "Quarterly progress shoot", bronze: false, silver: false, gold: true, platinum: true },
+  { label: "Supplement & lab guidance", bronze: false, silver: false, gold: true, platinum: true },
+  { label: "Weekly video calls", bronze: false, silver: false, gold: false, platinum: true },
+  { label: "24/7 direct messaging access", bronze: false, silver: false, gold: false, platinum: true },
+  { label: "Monthly in-person session", bronze: false, silver: false, gold: false, platinum: true },
+  { label: "Fully custom meal plans", bronze: false, silver: false, gold: false, platinum: true },
 ];
 
-const PLANS: { key: "bronze" | "silver" | "gold"; name: string; price: string; highlighted?: boolean }[] = [
+const PLANS: { key: PlanKey; name: string; price: string; highlighted?: boolean }[] = [
   { key: "bronze", name: "Bronze", price: "£99" },
   { key: "silver", name: "Silver", price: "£179", highlighted: true },
   { key: "gold", name: "Gold", price: "£299" },
+  { key: "platinum", name: "Platinum", price: "£449" },
 ];
 
 export function PricingComparison() {
@@ -32,8 +39,8 @@ export function PricingComparison() {
         description="A transparent, side-by-side look at everything included in each online coaching tier."
       />
 
-      <Reveal delay={0.15} className="mt-16 max-w-4xl mx-auto overflow-x-auto">
-        <table className="w-full min-w-[560px] border-collapse">
+      <Reveal delay={0.15} className="mt-16 max-w-5xl mx-auto overflow-x-auto">
+        <table className="w-full min-w-[680px] border-collapse">
           <thead>
             <tr>
               <th className="text-left pb-6 font-normal text-sm text-muted-foreground align-bottom" />
@@ -65,7 +72,7 @@ export function PricingComparison() {
                 className={i % 2 === 0 ? "bg-charcoal/40" : "bg-transparent"}
               >
                 <td className="py-4 px-4 text-sm text-ivory/80">{row.label}</td>
-                {(["bronze", "silver", "gold"] as const).map((key) => (
+                {(["bronze", "silver", "gold", "platinum"] as const).map((key) => (
                   <td key={key} className="py-4 px-4 text-center">
                     {row[key] ? (
                       <Check className="inline size-4 text-gold" />

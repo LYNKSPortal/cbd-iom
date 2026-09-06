@@ -119,6 +119,21 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     ],
     cta: "Get Started",
   },
+  {
+    name: "Platinum",
+    price: "£449",
+    cadence: "/ month",
+    description: "Our most exclusive tier — unlimited access to Debs for total accountability.",
+    features: [
+      "Everything in Gold",
+      "Weekly video calls",
+      "24/7 direct messaging access",
+      "Monthly in-person session",
+      "Fully custom meal plans",
+      "Personal WhatsApp accountability line",
+    ],
+    cta: "Get Started",
+  },
 ];
 
 export type EventItem = {

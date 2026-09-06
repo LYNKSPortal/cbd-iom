@@ -31,7 +31,7 @@ export function OnlineCoaching({
         headingLevel={headingLevel}
       />
 
-      <div className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 max-w-7xl mx-auto">
         {packages.map((pkg, i) => (
           <PackageCard key={pkg.name} pkg={pkg} delay={i * 0.12} />
         ))}
