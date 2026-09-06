@@ -34,6 +34,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# local convenience exports (never commit secrets)
+env-vars.txt
+
 # vercel
 .vercel
 

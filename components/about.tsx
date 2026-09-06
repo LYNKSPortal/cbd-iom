@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
 const CREDENTIALS = [
-  "Level 4 Personal Trainer",
+  "Level 3 Personal Trainer",
   "Pre & Post-Natal Specialist",
   "Nutrition Coach Certified",
   "10+ Years Coaching Experience",
