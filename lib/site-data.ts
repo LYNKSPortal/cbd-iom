@@ -61,7 +61,7 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
   },
   {
     name: "12-Week Premium Coaching",
-    price: "£1,350",
+    price: "£480",
     cadence: "/ 12 weeks",
     description:
       "Our signature end-to-end coaching experience — full accountability, nutrition, and lifestyle support.",
