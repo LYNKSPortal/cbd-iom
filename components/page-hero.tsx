@@ -1,28 +1,39 @@
 import Image from "next/image";
 import { Reveal } from "@/components/reveal";
+import { MuxBackgroundVideo } from "@/components/mux-background-video";
 
 export function PageHero({
   eyebrow,
   title,
   description,
   image = "/image-of-debs.jpg",
+  muxPlaybackId,
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
   image?: string;
+  /** Mux playback ID — when set, renders a muted looping background video instead of the image. */
+  muxPlaybackId?: string;
 }) {
   return (
     <section className="relative flex items-end min-h-[42vh] md:min-h-[48vh] overflow-hidden bg-black pt-32 pb-16 md:pb-20">
       <div className="absolute inset-0">
-        <Image
-          src={image}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-top scale-105"
-        />
+        {muxPlaybackId ? (
+          <MuxBackgroundVideo
+            playbackId={muxPlaybackId}
+            className="absolute inset-0 w-full h-full object-cover object-top scale-105"
+          />
+        ) : (
+          <Image
+            src={image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top scale-105"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-black/50" />
       </div>
