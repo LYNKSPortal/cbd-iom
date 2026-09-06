@@ -7,7 +7,7 @@ const CREDENTIALS = [
   "Level 3 Personal Trainer",
   "Pre & Post-Natal Specialist",
   "Nutrition Coach Certified",
-  "10+ Years Coaching Experience",
+  "5+ Years Coaching Experience",
 ];
 
 export function About() {
