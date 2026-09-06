@@ -28,7 +28,7 @@ const PLANS: { key: PlanKey; name: string; price: string; highlighted?: boolean 
   { key: "bronze", name: "Bronze", price: "£25" },
   { key: "silver", name: "Silver", price: "£95", highlighted: true },
   { key: "gold", name: "Gold", price: "£175" },
-  { key: "platinum", name: "Platinum", price: "£275" },
+  { key: "platinum", name: "Platinum", price: "£295" },
 ];
 
 export function PricingComparison() {

@@ -120,7 +120,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
   },
   {
     name: "Platinum",
-    price: "£275",
+    price: "£295",
     cadence: "/ month",
     description: "Our most exclusive tier — unlimited access to Debs for total accountability.",
     features: [
