@@ -17,7 +17,7 @@ export function PageHero({
   muxPlaybackId?: string;
 }) {
   return (
-    <section className="relative flex items-end min-h-[42vh] md:min-h-[48vh] overflow-hidden bg-black pt-32 pb-16 md:pb-20">
+    <section className="relative flex items-start md:items-end min-h-[42vh] md:min-h-[48vh] overflow-hidden bg-black pt-48 sm:pt-56 md:pt-32 pb-16 md:pb-20">
       <div className="absolute inset-0">
         {muxPlaybackId ? (
           <MuxBackgroundVideo
