@@ -1,6 +1,7 @@
 import { Testimonials } from "@/components/testimonials";
 import { TransformationGallery } from "@/components/transformation-gallery";
 import { FinalCTA } from "@/components/final-cta";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd } from "@/components/json-ld";
 import { getBreadcrumbSchema, getReviewsSchema } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/seo";
@@ -24,8 +25,12 @@ export default function ResultsPage() {
           ]),
         ]}
       />
-      <div className="pt-32" />
-      <Testimonials headingLevel="h1" />
+      <PageHero
+        eyebrow="Client Transformations"
+        title="Real people. Real results."
+        description="The proof isn't in the promise — it's in the transformation."
+      />
+      <Testimonials />
       <TransformationGallery />
       <FinalCTA />
     </>

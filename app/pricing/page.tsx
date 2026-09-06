@@ -2,6 +2,7 @@ import { PersonalTraining } from "@/components/personal-training";
 import { OnlineCoaching } from "@/components/online-coaching";
 import { PricingComparison } from "@/components/pricing-comparison";
 import { FinalCTA } from "@/components/final-cta";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd } from "@/components/json-ld";
 import {
   getBreadcrumbSchema,
@@ -30,11 +31,14 @@ export default function PricingPage() {
           ]),
         ]}
       />
-      <div className="pt-32" />
+      <PageHero
+        eyebrow="Pricing"
+        title="Find the level of support that's right for you"
+        description="Every Coached by Debs package — 1-to-1 personal training and online coaching — side by side, with full pricing and feature comparisons."
+      />
       <PersonalTraining
         eyebrow="1-to-1 Personal Training"
         title="In-person coaching packages"
-        headingLevel="h1"
       />
       <OnlineCoaching
         eyebrow="Online Coaching"

@@ -2,7 +2,6 @@
 
 import { useState, type FormEvent } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,11 +15,7 @@ const INTERESTS = [
   "Not Sure Yet",
 ];
 
-export function BookingForm({
-  headingLevel = "h2",
-}: {
-  headingLevel?: "h1" | "h2";
-}) {
+export function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -67,14 +62,7 @@ export function BookingForm({
 
   return (
     <section className="section-padding py-24 md:py-32 bg-black">
-      <SectionHeading
-        eyebrow="Get In Touch"
-        title="Book your free consultation"
-        description="Tell us a little about your goals and we'll be in touch within 24 hours to find the right programme for you."
-        headingLevel={headingLevel}
-      />
-
-      <div className="mt-16 grid lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
+      <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
         <Reveal className="lg:col-span-3">
           {submitted ? (
             <div className="glass rounded-sm p-10 text-center h-full flex flex-col items-center justify-center">

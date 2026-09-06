@@ -1,5 +1,6 @@
 import { BookingForm } from "@/components/booking-form";
 import { SocialNewsletter } from "@/components/social-newsletter";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd } from "@/components/json-ld";
 import { getBreadcrumbSchema, getContactPageSchema } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/seo";
@@ -23,8 +24,12 @@ export default function ContactPage() {
           ]),
         ]}
       />
-      <div className="pt-32" />
-      <BookingForm headingLevel="h1" />
+      <PageHero
+        eyebrow="Get In Touch"
+        title="Book your free consultation"
+        description="Tell us a little about your goals and we'll be in touch within 24 hours to find the right programme for you."
+      />
+      <BookingForm />
       <SocialNewsletter />
     </>
   );

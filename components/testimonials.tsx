@@ -3,15 +3,10 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { SectionHeading } from "@/components/section-heading";
 import { TESTIMONIALS } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
-export function Testimonials({
-  headingLevel = "h2",
-}: {
-  headingLevel?: "h1" | "h2";
-}) {
+export function Testimonials() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -32,14 +27,7 @@ export function Testimonials({
 
   return (
     <section className="section-padding py-24 md:py-32 bg-charcoal/30">
-      <SectionHeading
-        eyebrow="Client Transformations"
-        title="Real people. Real results."
-        description="The proof isn't in the promise — it's in the transformation."
-        headingLevel={headingLevel}
-      />
-
-      <div className="relative mt-16 max-w-3xl mx-auto">
+      <div className="relative max-w-3xl mx-auto">
         <div className="relative min-h-[280px] md:min-h-[240px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div

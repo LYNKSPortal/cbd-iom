@@ -1,5 +1,6 @@
 import { FAQ } from "@/components/faq";
 import { FinalCTA } from "@/components/final-cta";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd } from "@/components/json-ld";
 import { getBreadcrumbSchema, getFAQPageSchema } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/seo";
@@ -23,8 +24,12 @@ export default function FAQPage() {
           ]),
         ]}
       />
-      <div className="pt-32" />
-      <FAQ headingLevel="h1" />
+      <PageHero
+        eyebrow="FAQ"
+        title="Questions, answered"
+        description="Everything you need to know before getting started."
+      />
+      <FAQ />
       <FinalCTA />
     </>
   );

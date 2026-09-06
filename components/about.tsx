@@ -36,13 +36,13 @@ export function About() {
           <Reveal>
             <span className="inline-flex items-center gap-2 text-xs md:text-sm tracking-[0.3em] uppercase text-gold font-medium">
               <span className="h-px w-6 bg-gold" />
-              About Debs
+              My Story
             </span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="font-display mt-4 text-4xl md:text-5xl font-medium leading-[1.05] text-ivory">
-              Coaching built on honesty, science, and real life
-            </h1>
+            <h2 className="font-display mt-4 text-4xl md:text-5xl font-medium leading-[1.05] text-ivory">
+              My approach to coaching
+            </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-ivory/70 leading-relaxed">

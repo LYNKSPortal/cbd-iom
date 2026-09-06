@@ -1,5 +1,6 @@
 import { PersonalTraining } from "@/components/personal-training";
 import { FinalCTA } from "@/components/final-cta";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd } from "@/components/json-ld";
 import { getBreadcrumbSchema, getPersonalTrainingServiceSchema } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/seo";
@@ -23,8 +24,16 @@ export default function PersonalTrainingPage() {
           ]),
         ]}
       />
-      <div className="pt-32" />
-      <PersonalTraining headingLevel="h1" />
+      <PageHero
+        eyebrow="1-to-1 Personal Training"
+        title="Hands-on coaching, built entirely around you"
+        description="In-studio or outdoor personal training on the Isle of Man, tailored to your goals, your body, and your schedule."
+      />
+      <PersonalTraining
+        eyebrow="Packages"
+        title="Choose your package"
+        description="From a single trial session to full 12-week transformation coaching."
+      />
       <FinalCTA />
     </>
   );
