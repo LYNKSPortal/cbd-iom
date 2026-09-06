@@ -1,33 +1,22 @@
-import Header from '@/components/Header';
-import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import TrustSignals from '@/components/TrustSignals';
-import Services from '@/components/Services';
-import MedicalSupport from '@/components/MedicalSupport';
-import ClientResults from '@/components/ClientResults';
-import About from '@/components/About';
-import Pricing from '@/components/Pricing';
-import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
-import Footer from '@/components/Footer';
+import { Hero } from "@/components/hero";
+import { ServicesOverview } from "@/components/services-overview";
+import { ResultsTeaser } from "@/components/results-teaser";
+import { TransformationGallery } from "@/components/transformation-gallery";
+import { AboutTeaser } from "@/components/about-teaser";
+import { FinalCTA } from "@/components/final-cta";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
-      <Header />
-      <Navigation />
-      <main>
-        <Hero />
-        <TrustSignals />
-        <Services />
-        <MedicalSupport />
-        <ClientResults />
-        <About />
-        <Pricing />
-        <FAQ />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Hero />
+      <ServicesOverview />
+      <ResultsTeaser />
+      <TransformationGallery
+        limit={8}
+        footerCta={{ href: "/results", label: "View The Full Gallery" }}
+      />
+      <AboutTeaser />
+      <FinalCTA />
+    </>
   );
 }
