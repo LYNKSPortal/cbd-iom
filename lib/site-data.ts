@@ -96,7 +96,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     features: [
       "Everything in Bronze",
       "Personalised nutrition plan",
-      "Monthly check-in",
+      "Monthly check-in and Adjustments",
       "Direct messaging with Debs",
       "Habit & recovery tracking",
     ],
@@ -110,7 +110,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     description: "Fully white-glove coaching for those who want the very best support.",
     features: [
       "Everything in Silver",
-      "Weekly check-ins",
+      "Weekly check-in and Adjustments",
       "Bi-weekly video calls",
       "Priority same-day messaging",
       "Event & travel training plans",
