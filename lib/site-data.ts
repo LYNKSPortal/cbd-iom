@@ -29,7 +29,7 @@ export type Package = {
 export const PERSONAL_TRAINING_PACKAGES: Package[] = [
   {
     name: "Single Session",
-    price: "£45.00",
+    price: "£50.00",
     cadence: "per session",
     description:
       "A one-off, fully bespoke training session — perfect for a trial or a top-up between programs.",
@@ -44,7 +44,7 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
   },
   {
     name: "8-Session Transformation",
-    price: "£480",
+    price: "£4360",
     cadence: "/ 8 sessions",
     description:
       "A focused block designed to build momentum, correct form, and deliver visible results fast.",
