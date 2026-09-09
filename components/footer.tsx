@@ -68,8 +68,8 @@ export function Footer() {
           </h4>
           <ul className="flex flex-col gap-3 text-sm text-ivory/70">
             <li>
-              <a href="mailto:hello@coachedbydebs.com" className="hover:text-gold transition-colors">
-                hello@coachedbydebs.com
+              <a href="mailto:info@coachedbydebs.com" className="hover:text-gold transition-colors">
+                info@coachedbydebs.com
               </a>
             </li>
             <li>

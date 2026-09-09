@@ -58,9 +58,9 @@ export function BookingForm() {
               Prefer to reach out directly?
             </h3>
             <div className="flex flex-col gap-4 text-sm text-ivory/80">
-              <a href="mailto:hello@coachedbydebs.com" className="flex items-center gap-3 hover:text-gold transition-colors">
+              <a href="mailto:info@coachedbydebs.com" className="flex items-center gap-3 hover:text-gold transition-colors">
                 <Mail className="size-4 text-gold" />
-                hello@coachedbydebs.com
+                info@coachedbydebs.com
               </a>
               <a href="tel:+447624220294" className="flex items-center gap-3 hover:text-gold transition-colors">
                 <Phone className="size-4 text-gold" />

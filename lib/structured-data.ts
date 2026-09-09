@@ -39,7 +39,7 @@ export function getOrganizationSchema() {
       addressCountry: "IM",
       addressRegion: "Isle of Man",
     },
-    email: "hello@coachedbydebs.com",
+    email: "info@coachedbydebs.com",
     telephone: "+44-76-2422-0294",
     sameAs: SOCIAL_LINKS.map((s) => s.href),
     founder: {
