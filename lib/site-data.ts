@@ -161,46 +161,32 @@ export type Testimonial = {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Sarah M.",
-    result: "Lost 14kg in 12 weeks",
+    name: "Paul W.",
+    result: "Personal Training Client",
     quote:
-      "Debs completely changed how I think about training and food. I feel stronger and more confident than I have in a decade.",
-    program: "Block of 12",
+      "Debs has helped me gain confidence, I actually enjoy training and the results speak for themselves.",
+    program: "1-to-1 Personal Training",
   },
   {
-    name: "Charlotte R.",
-    result: "Gold Online Coaching, 6 months",
+    name: "Sammi G.",
+    result: "3 Years with Debs",
     quote:
-      "The weekly check-ins kept me accountable even when life got busy. This is the first plan I've ever actually stuck to.",
-    program: "Online Coaching — Gold",
+      "Since starting with Debs 3 years ago changed my life. I went from lethargic and overweight to being the healthiest and strongest I've ever been. Debs changed my mindset from wanting to be skinny to being the strongest and healthiest version of myself I've ever been.",
+    program: "1-to-1 Personal Training",
   },
   {
-    name: "Emma T.",
-    result: "Block of 8",
+    name: "Glenda C.",
+    result: "Personal Training Client",
     quote:
-      "I walked in nervous and walked out with a plan that actually fit my life. Debs makes you feel seen, not judged.",
-    program: "Block of 8",
+      "I signed up with Debs after suffering life-changing trauma. While I was training my body, I also found a safe place to quieten the noise in my mind. Training helped me focus, breathe and take life one day at a time. I became stronger, calmer — and somewhere along the way, I found myself again.",
+    program: "1-to-1 Personal Training",
   },
   {
-    name: "Laura K.",
-    result: "Silver Online Coaching, 1 year",
+    name: "Kerry W.",
+    result: "Photoshoot Transformation",
     quote:
-      "Sustainable, realistic, and genuinely life-changing. I've never felt more in control of my health.",
-    program: "Online Coaching — Silver",
-  },
-  {
-    name: "Megan T.",
-    result: "Block of 8, back for more",
-    quote:
-      "Every session was tailored to how I was actually feeling that day. I've never stuck with a programme this long before.",
-    program: "Block of 8",
-  },
-  {
-    name: "Hannah W.",
-    result: "Bronze Online Coaching, 4 months",
-    quote:
-      "I was nervous about committing to anything, but starting on Bronze made it so easy to build the habit without feeling overwhelmed.",
-    program: "Online Coaching — Bronze",
+      "Debs has trained and supported me and given me confidence in the gym. I absolutely love my PT sessions and it's just part of my life now. I have lost weight and look great. I even felt confident enough to complete a photoshoot transformation, which I never thought I'd do! Debs is really understanding and pushes you, but also realises that we all have a life and to make this sustainable a normal social life needs to fit in around it. I'd recommend Debs to anyone.",
+    program: "1-to-1 Personal Training",
   },
 ];
 
