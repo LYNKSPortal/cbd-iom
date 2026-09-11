@@ -12,7 +12,7 @@ export function UpcomingEvents({
   limit,
   eyebrow = "Upcoming Events",
   title = "Join us in person or online",
-  description = "Live masterclasses, challenges, and retreats designed to accelerate your progress and connect you with a community of people just like you.",
+  description = "Spaces are limited — reserve your spot today.",
   footerCta,
   headingLevel = "h2",
 }: {

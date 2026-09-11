@@ -43,7 +43,7 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
     cta: "Book a Session",
   },
   {
-    name: "8-Session Transformation",
+    name: "Block of 8",
     price: "£360",
     cadence: "/ 8 sessions",
     description:
@@ -59,13 +59,13 @@ export const PERSONAL_TRAINING_PACKAGES: Package[] = [
     cta: "Start Your Transformation",
   },
   {
-    name: "12-Week Premium Coaching",
+    name: "Block of 12",
     price: "£480",
-    cadence: "/ 12 weeks",
+    cadence: "/ 12 sessions",
     description:
-      "Our signature end-to-end coaching experience — full accountability, nutrition, and lifestyle support.",
+      "A focused block designed to build momentum, correct form, and deliver visible results fast.",
     features: [
-      "12 x 45-minute 1-to-1 sessions",
+      "8 x 45-minute 1-to-1 sessions",
       "Movement & posture assessment",
       "Personalised exercise selection",
       "GYM training",
@@ -143,28 +143,13 @@ export type EventItem = {
 // Static ISO date strings; countdown component computes remaining time client-side.
 export const UPCOMING_EVENTS: EventItem[] = [
   {
-    title: "Strength & Sculpt Retreat Weekend",
-    date: "2026-04-18T09:00:00",
-    location: "Isle of Man",
-    description:
-      "A two-day immersive retreat combining strength training, mobility, nutrition workshops, and recovery.",
-    spots: "6 spots remaining",
-  },
-  {
-    title: "Summer Shred 8-Week Challenge",
-    date: "2026-05-04T06:00:00",
+    title: "Little Christmas Shred — Coming Soon",
+    date: "2026-10-01T06:00:00",
     location: "Online & In-Studio",
     description:
-      "An 8-week group challenge with weekly live sessions, accountability, and a leaderboard for prizes.",
-    spots: "Enrolment open",
-  },
-  {
-    title: "Confidence & Core Masterclass",
-    date: "2026-03-02T18:30:00",
-    location: "The Studio, Douglas",
-    description:
-      "A live evening masterclass focused on core strength, posture, and building unshakeable confidence.",
-    spots: "12 spots remaining",
+      "An 8-week cut starting 1st October, designed to get you feeling confident and back in your routine before the festive season begins.",
+    image: "/festive-package-img.jpg",
+    spots: "Coming soon",
   },
 ];
 
@@ -181,7 +166,7 @@ export const TESTIMONIALS: Testimonial[] = [
     result: "Lost 14kg in 12 weeks",
     quote:
       "Debs completely changed how I think about training and food. I feel stronger and more confident than I have in a decade.",
-    program: "12-Week Premium Coaching",
+    program: "Block of 12",
   },
   {
     name: "Charlotte R.",
@@ -192,10 +177,10 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     name: "Emma T.",
-    result: "8-Session Transformation",
+    result: "Block of 8",
     quote:
       "I walked in nervous and walked out with a plan that actually fit my life. Debs makes you feel seen, not judged.",
-    program: "8-Session Transformation",
+    program: "Block of 8",
   },
   {
     name: "Laura K.",
@@ -203,6 +188,20 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Sustainable, realistic, and genuinely life-changing. I've never felt more in control of my health.",
     program: "Online Coaching — Silver",
+  },
+  {
+    name: "Megan T.",
+    result: "Block of 8, back for more",
+    quote:
+      "Every session was tailored to how I was actually feeling that day. I've never stuck with a programme this long before.",
+    program: "Block of 8",
+  },
+  {
+    name: "Hannah W.",
+    result: "Bronze Online Coaching, 4 months",
+    quote:
+      "I was nervous about committing to anything, but starting on Bronze made it so easy to build the habit without feeling overwhelmed.",
+    program: "Online Coaching — Bronze",
   },
 ];
 
@@ -225,7 +224,7 @@ export const FAQS = [
   {
     question: "Do you offer nutrition support?",
     answer:
-      "Yes — nutrition guidance is included from the 8-Session Transformation package upward, and in every online coaching tier from Silver up.",
+      "Yes — nutrition guidance is included from the Block of 8 package upward, and in every online coaching tier from Silver up.",
   },
   {
     question: "Where do 1-to-1 sessions take place?",

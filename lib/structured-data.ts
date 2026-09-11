@@ -106,7 +106,7 @@ export function getPersonalTrainingServiceSchema() {
     areaServed: { "@type": "Place", name: "Isle of Man" },
     audience: { "@type": "Audience", audienceType: "Everyone" },
     description:
-      "Bespoke in-studio and outdoor personal training packages, including single sessions, the 8-Session Transformation, and 12-Week Premium Coaching.",
+      "Bespoke in-studio and outdoor personal training packages, including single sessions, a Block of 8, and a Block of 12.",
     hasOfferCatalog: packagesToOfferCatalog(
       "1-to-1 Personal Training Packages",
       PERSONAL_TRAINING_PACKAGES

@@ -7,8 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Upcoming Events",
-  description:
-    "Live masterclasses, challenges, and retreats from Coached by Debs — join in person or online.",
+  description: "Join our next challenge with Coached by Debs — spaces are limited.",
   path: "/events",
 });
 
@@ -27,7 +26,7 @@ export default function EventsPage() {
       <PageHero
         eyebrow="Upcoming Events"
         title="Join us in person or online"
-        description="Live masterclasses, challenges, and retreats designed to accelerate your progress and connect you with a community of people just like you."
+        description="Spaces are limited — reserve your spot today."
         muxPlaybackId="00IRw7bFkAFNkCvIOg9Z02Jf0200Ez7K5DwLT77ZYUjioRI"
       />
       <UpcomingEvents

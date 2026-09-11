@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "1-to-1 Personal Training",
   description:
-    "Bespoke in-studio and outdoor personal training packages — single sessions, the 8-Session Transformation, and 12-Week Premium Coaching on the Isle of Man.",
+    "Bespoke in-studio and outdoor personal training packages — single sessions, a Block of 8, and a Block of 12, on the Isle of Man.",
   path: "/personal-training",
 });
 
