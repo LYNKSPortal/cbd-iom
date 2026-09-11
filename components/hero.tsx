@@ -86,7 +86,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl border-t border-white/10 pt-8"
+          className="mt-14 grid grid-cols-3 gap-6 max-w-2xl border-t border-white/10 pt-8"
         >
           {TRUST_INDICATORS.map((item) => (
             <div key={item.label}>

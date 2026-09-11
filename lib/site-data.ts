@@ -10,7 +10,6 @@ export const NAV_LINKS = [
 ];
 
 export const TRUST_INDICATORS = [
-  { label: "Certified Personal Trainer", value: "Level 2 & 3" },
   { label: "Clients Coached", value: "250+" },
   { label: "Years of Experience", value: "5+" },
   { label: "Client Rating", value: "4.9 / 5" },
