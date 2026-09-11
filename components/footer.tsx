@@ -73,8 +73,8 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="tel:+447624220294" className="hover:text-gold transition-colors">
-                +44 76 2422 0294
+              <a href="tel:+447624372485" className="hover:text-gold transition-colors">
+                +44 7624 372485
               </a>
             </li>
             <li>Isle of Man &amp; Worldwide</li>

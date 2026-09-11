@@ -62,9 +62,9 @@ export function BookingForm() {
                 <Mail className="size-4 text-gold" />
                 info@coachedbydebs.com
               </a>
-              <a href="tel:+447624220294" className="flex items-center gap-3 hover:text-gold transition-colors">
+              <a href="tel:+447624372485" className="flex items-center gap-3 hover:text-gold transition-colors">
                 <Phone className="size-4 text-gold" />
-                +44 76 2422 0294
+                +44 7624 372485
               </a>
               <span className="flex items-center gap-3">
                 <MapPin className="size-4 text-gold" />
