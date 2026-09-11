@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "About Debs",
   description:
-    "Meet Debs — certified personal trainer and coach with 5+ years of experience helping men and women build strength and confidence.",
+    "Meet Debs — a personal trainer and online coach with 5 years of experience helping men and women become stronger, fitter, and more confident.",
   path: "/about",
 });
 
@@ -27,7 +27,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Debs"
         title="Coaching built on honesty, science, and real life"
-        description="Meet Debs — certified personal trainer and coach dedicated to helping men and women build strength and confidence."
+        description="A personal trainer and online coach passionate about helping men and women become stronger, fitter, and more confident."
         muxPlaybackId="T3WPFqw2iVckDSktLPmFmrN2ncEB01fTMDVs5SzpexwI"
       />
       <About />

@@ -39,10 +39,11 @@ export function AboutTeaser() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-ivory/70 leading-relaxed">
-              I&apos;m Debs — a personal trainer and coach dedicated to
-              helping men and women build strength and confidence without
-              extreme diets or unsustainable routines. Every plan I write is
-              personal, evidence-based, and designed to fit your life.
+              I&apos;m Debs — a personal trainer and online coach passionate
+              about helping men and women become stronger, fitter and more
+              confident, without extreme diets or routines that take over
+              your life. Your programme should fit your life, not the other
+              way around.
             </p>
           </Reveal>
 

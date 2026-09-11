@@ -3,13 +3,6 @@ import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
-const CREDENTIALS = [
-  "Level 3 Personal Trainer",
-  "Pre & Post-Natal Specialist",
-  "Nutrition Coach Certified",
-  "5+ Years Coaching Experience",
-];
-
 export function About() {
   return (
     <section className="section-padding py-24 md:py-32 bg-black overflow-hidden">
@@ -46,31 +39,44 @@ export function About() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-ivory/70 leading-relaxed">
-              I&apos;m Debs — a personal trainer and coach dedicated to
-              helping men and women build strength and confidence without
-              extreme diets or unsustainable routines. After a decade of
-              coaching hundreds of clients through pregnancy, menopause,
-              injury, and everything in between, I built Coached by Debs
-              around one belief: your programme should fit your life, not
-              the other way around.
+              I&apos;m Debs — a personal trainer and online coach passionate
+              about helping men and women become stronger, fitter and more
+              confident, without extreme diets or routines that take over
+              your life.
+            </p>
+          </Reveal>
+          <Reveal delay={0.25}>
+            <p className="mt-4 text-base md:text-lg text-ivory/70 leading-relaxed">
+              With 5 years of coaching experience, I&apos;ve worked with
+              people at all different stages — from complete beginners to
+              experienced gym-goers, through pregnancy, injuries and
+              everything life throws at us.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
             <p className="mt-4 text-base md:text-lg text-ivory/70 leading-relaxed">
-              Every plan I write is personal, evidence-based, and designed to
-              be something you can actually stick to — for years, not weeks.
+              I built Coached by Debs around one simple belief:
             </p>
           </Reveal>
-
+          <Reveal delay={0.35}>
+            <p className="mt-4 font-display italic text-xl md:text-2xl text-gold leading-relaxed">
+              Your programme should fit your life, not the other way around.
+            </p>
+          </Reveal>
           <Reveal delay={0.4}>
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              {CREDENTIALS.map((c) => (
-                <div key={c} className="flex items-center gap-2.5 text-sm text-ivory/80">
-                  <span className="size-1.5 rounded-full bg-gold shrink-0" />
-                  {c}
-                </div>
-              ))}
-            </div>
+            <p className="mt-4 text-base md:text-lg text-ivory/70 leading-relaxed">
+              There&apos;s no one-size-fits-all approach here. Your training
+              and nutrition are built around you, your goals and your
+              lifestyle, with a focus on creating results you can actually
+              maintain.
+            </p>
+          </Reveal>
+          <Reveal delay={0.45}>
+            <p className="mt-4 text-base md:text-lg text-ivory/70 leading-relaxed">
+              No extremes. No quick fixes. Just a realistic approach,
+              consistency and support to help you become the strongest and
+              most confident version of yourself.
+            </p>
           </Reveal>
 
           <Reveal delay={0.5}>

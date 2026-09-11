@@ -210,7 +210,7 @@ export function getPersonSchema() {
     jobTitle: "Personal Trainer & Coach",
     worksFor: { "@id": ORGANIZATION_ID },
     description:
-      "Certified personal trainer and coach with 5+ years of experience helping men and women build strength, confidence, and lasting fitness through personal training and online coaching.",
+      "Personal trainer and online coach with 5 years of experience helping men and women become stronger, fitter, and more confident through personal training and online coaching.",
     knowsAbout: [
       "Personal Training",
       "Online Coaching",
