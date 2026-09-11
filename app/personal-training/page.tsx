@@ -27,7 +27,7 @@ export default function PersonalTrainingPage() {
       <PageHero
         eyebrow="1-to-1 Personal Training"
         title="Hands-on coaching, built entirely around you"
-        description="In-studio or outdoor personal training on the Isle of Man, tailored to your goals, your body, and your schedule."
+        description="Personal training on the Isle of Man, tailored to your goals, your body, and your schedule."
         muxPlaybackId="Oe28gh9prZVXjmsv7TCVmwn2mWIPjcpffP39aEH5RTw"
       />
       <PersonalTraining
