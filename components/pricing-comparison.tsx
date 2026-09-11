@@ -17,7 +17,7 @@ const ROWS: ({ label: string } & Record<PlanKey, boolean>)[] = [
   { label: "Check-ins Twice Per Week", bronze: false, silver: false, gold: false, platinum: true },
   { label: "Direct messaging with Debs", bronze: false, silver: true, gold: true, platinum: true },
   { label: "Priority same-day messaging", bronze: false, silver: false, gold: true, platinum: true },
-  { label: "Monthly video calls", bronze: false, silver: false, gold: false, platinum: true },
+  { label: "Monthly 1-2-1 Training Session", bronze: false, silver: false, gold: false, platinum: true },
 ];
 
 const PLANS: { key: PlanKey; name: string; price: string; highlighted?: boolean }[] = [

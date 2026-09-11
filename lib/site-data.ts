@@ -132,7 +132,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
       "Check-ins Twice Per Week",
       "Direct messaging with Debs",
       "Priority same-day messaging",
-      "Monthly video calls",
+      "Monthly 1-2-1 Training Session",
     ],
     cta: "Get Started",
   },
