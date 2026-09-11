@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero";
 import { ServicesOverview } from "@/components/services-overview";
 import { ResultsTeaser } from "@/components/results-teaser";
 import { TransformationGallery } from "@/components/transformation-gallery";
-import { AboutTeaser } from "@/components/about-teaser";
+import { ChristmasTeaser } from "@/components/christmas-teaser";
 import { FinalCTA } from "@/components/final-cta";
 import { pageMetadata } from "@/lib/seo";
 
@@ -24,7 +24,7 @@ export default function Home() {
         limit={8}
         footerCta={{ href: "/results", label: "View The Full Gallery" }}
       />
-      <AboutTeaser />
+      <ChristmasTeaser />
       <FinalCTA />
     </>
   );
