@@ -9,7 +9,7 @@ export function ChristmasTeaser() {
     <section className="section-padding py-24 md:py-32 bg-black overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center max-w-6xl mx-auto">
         <Reveal className="relative order-2 lg:order-1">
-          <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
+          <div className="relative aspect-square max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
             <Image
               src="/festive-package-img.jpg"
               alt="8-Week Festive Shred with Coached by Debs"
