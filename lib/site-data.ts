@@ -91,7 +91,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
     name: "Silver",
     price: "£95",
     cadence: "/ month",
-    description: "Our most popular plan — training, nutrition, and weekly accountability.",
+    description: "Training, nutrition, and weekly accountability.",
     features: [
       "App access & progress logging",
       "Whatsapp group chat",
@@ -100,14 +100,13 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
       "Monthly check-in and Adjustments",
       "Direct messaging with Debs",
     ],
-    highlighted: true,
     cta: "Get Started",
   },
   {
     name: "Gold",
     price: "£175",
     cadence: "/ month",
-    description: "Fully white-glove coaching for those who want the very best support.",
+    description: "Our most popular plan — fully white-glove coaching for those who want the very best support.",
     features: [
       "App access & progress logging",
       "Whatsapp group chat",
@@ -117,6 +116,7 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
       "Direct messaging with Debs",
       "Priority same-day messaging",
     ],
+    highlighted: true,
     cta: "Get Started",
   },
   {
