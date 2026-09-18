@@ -27,12 +27,12 @@ export function OfferCard({
     >
       <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center max-w-6xl mx-auto">
         <Reveal className="relative">
-          <div className="relative aspect-square max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
+          <div className="relative aspect-square w-full max-w-lg mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
             <Image
               src={offer.image}
               alt={offer.imageAlt}
               fill
-              sizes="(min-width: 1024px) 28rem, 90vw"
+              sizes="(min-width: 1024px) 42rem, 90vw"
               className="object-cover"
             />
           </div>
