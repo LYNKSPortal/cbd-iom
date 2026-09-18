@@ -25,14 +25,14 @@ export function OfferCard({
         variant === "charcoal" ? "bg-charcoal" : "bg-black"
       }`}
     >
-      <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-[1.15fr_1fr] gap-14 lg:gap-16 items-center max-w-7xl mx-auto">
         <Reveal className="relative">
-          <div className="relative aspect-square w-full max-w-lg mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
+          <div className="relative aspect-square w-full rounded-sm overflow-hidden gold-border">
             <Image
               src={offer.image}
               alt={offer.imageAlt}
               fill
-              sizes="(min-width: 1024px) 42rem, 90vw"
+              sizes="(min-width: 1024px) 50vw, 90vw"
               className="object-cover"
             />
           </div>
