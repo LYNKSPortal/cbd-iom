@@ -9,12 +9,14 @@ import type { SpecialOffer } from "@/lib/site-data";
 export function OfferCard({
   offer,
   showCountdown = false,
+  countdownLabel,
   ctaHref,
   ctaLabel = "Enquire Now",
   variant = "black",
 }: {
   offer: SpecialOffer;
   showCountdown?: boolean;
+  countdownLabel?: string;
   ctaHref?: string;
   ctaLabel?: string;
   variant?: "black" | "charcoal";
@@ -58,7 +60,7 @@ export function OfferCard({
             {showCountdown && (offer.endDate ?? offer.startDate) && (
               <div className="mt-6">
                 <span className="block text-[10px] uppercase tracking-[0.15em] text-ivory/50 mb-2">
-                  {offer.endDate ? "Offer Ends In" : "Starts In"}
+                  {countdownLabel ?? (offer.endDate ? "Offer Ends In" : "Starts In")}
                 </span>
                 <CountdownTimer target={(offer.endDate ?? offer.startDate) as string} />
               </div>
