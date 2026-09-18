@@ -42,14 +42,19 @@ export default function SpecialOffersPage() {
       </section>
       <OfferCard offer={FESTIVE_PACKAGE} showCountdown ctaHref="/contact" ctaLabel="Enquire Now" />
 
-      <section className="section-padding pt-8 md:pt-12 bg-black">
+      <section className="section-padding pt-8 md:pt-12 bg-charcoal">
         <SectionHeading
           eyebrow="Coming Soon"
           title="The Couples Package"
           description="Train together, stay accountable together — details coming soon."
         />
       </section>
-      <OfferCard offer={COUPLES_PACKAGE} ctaHref="/contact" ctaLabel="Register Interest" />
+      <OfferCard
+        offer={COUPLES_PACKAGE}
+        ctaHref="/contact"
+        ctaLabel="Register Interest"
+        variant="charcoal"
+      />
 
       <FinalCTA />
     </>

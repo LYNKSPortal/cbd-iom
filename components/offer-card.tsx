@@ -11,14 +11,20 @@ export function OfferCard({
   showCountdown = false,
   ctaHref,
   ctaLabel = "Enquire Now",
+  variant = "black",
 }: {
   offer: SpecialOffer;
   showCountdown?: boolean;
   ctaHref?: string;
   ctaLabel?: string;
+  variant?: "black" | "charcoal";
 }) {
   return (
-    <section className="section-padding py-16 md:py-20 bg-black">
+    <section
+      className={`section-padding py-16 md:py-20 ${
+        variant === "charcoal" ? "bg-charcoal" : "bg-black"
+      }`}
+    >
       <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center max-w-6xl mx-auto">
         <Reveal className="relative">
           <div className="relative aspect-square max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden gold-border">
