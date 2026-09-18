@@ -44,15 +44,15 @@ export default function SpecialOffersPage() {
 
       <section className="section-padding pt-8 md:pt-12 bg-charcoal">
         <SectionHeading
-          eyebrow="Coming Soon"
+          eyebrow="Special Offer"
           title="Couple Training Package"
-          description="Train together, stay accountable together — details coming soon."
+          description="Two for the price of one — train together and reach your goals side by side."
         />
       </section>
       <OfferCard
         offer={COUPLES_PACKAGE}
         ctaHref="/contact"
-        ctaLabel="Register Interest"
+        ctaLabel="Sign Up With Us Now!"
         variant="charcoal"
       />
 

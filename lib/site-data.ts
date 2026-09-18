@@ -271,23 +271,23 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
   startDate: "2026-10-01T06:00:00",
 };
 
-// Placeholder copy/image — update once real Couples Package details are confirmed.
+// Placeholder image — update once the real couples photo is provided.
 export const COUPLES_PACKAGE: SpecialOffer = {
-  eyebrow: "Coming Soon",
+  eyebrow: "Two For The Price Of One!",
   title: "Couple Training Package",
   description:
-    "Train together, stay accountable together — a coaching package built for two, coming soon.",
+    "Take advantage of our special couples training offer — when one partner signs up, the other trains free.",
   image: "/image-of-debs.jpg",
   imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
-    "Whether you're both just getting started or already love training, the Couple Training Package brings you and your partner together for shared sessions, shared accountability, and shared results. One programme, built around both of you, so you can push each other on and celebrate the wins together.",
-  price: "TBC",
-  cadence: "/ package",
+    "Take advantage of our special couples training offer. When one partner purchases a training package, the other partner receives the same package completely free! Train together, stay motivated, and reach your goals for the price of one.",
+  price: "2-for-1",
+  cadence: "on any training package",
   features: [
-    "Shared 1-to-1 training sessions for two",
-    "A programme personalised to both of you",
-    "Joint accountability & check-ins",
-    "Flexible scheduling that fits you both",
+    "One partner purchases, the other trains free",
+    "Train together and stay motivated",
+    "Works with any training package",
+    "Reach your goals together, for the price of one",
   ],
-  availability: "Coming Soon — Details TBC",
+  availability: "Two For The Price Of One!",
 };
