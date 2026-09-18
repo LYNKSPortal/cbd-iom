@@ -1,10 +1,11 @@
 import { PageHero } from "@/components/page-hero";
-import { FestiveOffer } from "@/components/festive-offer";
+import { OfferCard } from "@/components/offer-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FinalCTA } from "@/components/final-cta";
 import { JsonLd } from "@/components/json-ld";
 import { getBreadcrumbSchema, getSpecialOfferSchema } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/seo";
+import { COUPLES_PACKAGE, FESTIVE_PACKAGE } from "@/lib/site-data";
 
 export const metadata = pageMetadata({
   title: "Special Offers",
@@ -17,7 +18,8 @@ export default function SpecialOffersPage() {
     <>
       <JsonLd
         data={[
-          getSpecialOfferSchema(),
+          getSpecialOfferSchema(FESTIVE_PACKAGE),
+          getSpecialOfferSchema(COUPLES_PACKAGE),
           getBreadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Special Offers", path: "/special-offers" },
@@ -30,6 +32,7 @@ export default function SpecialOffersPage() {
         description="New offers added throughout the year — here's what's on right now."
         muxPlaybackId="00IRw7bFkAFNkCvIOg9Z02Jf0200Ez7K5DwLT77ZYUjioRI"
       />
+
       <section className="section-padding pt-24 md:pt-32 bg-black">
         <SectionHeading
           eyebrow="Currently Live"
@@ -37,7 +40,17 @@ export default function SpecialOffersPage() {
           description="Starts 1st October — here's everything you need to know."
         />
       </section>
-      <FestiveOffer showCountdown ctaHref="/contact" ctaLabel="Enquire Now" />
+      <OfferCard offer={FESTIVE_PACKAGE} showCountdown ctaHref="/contact" ctaLabel="Enquire Now" />
+
+      <section className="section-padding pt-8 md:pt-12 bg-black">
+        <SectionHeading
+          eyebrow="Coming Soon"
+          title="The Couples Package"
+          description="Train together, stay accountable together — details coming soon."
+        />
+      </section>
+      <OfferCard offer={COUPLES_PACKAGE} ctaHref="/contact" ctaLabel="Register Interest" />
+
       <FinalCTA />
     </>
   );

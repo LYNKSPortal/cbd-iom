@@ -6,6 +6,7 @@ import {
   SOCIAL_LINKS,
   TESTIMONIALS,
   type Package,
+  type SpecialOffer,
 } from "@/lib/site-data";
 
 export const SITE_URL = "https://www.coachedbydebs.com";
@@ -147,15 +148,15 @@ export function getFAQPageSchema() {
   };
 }
 
-export function getSpecialOfferSchema() {
+export function getSpecialOfferSchema(offer: SpecialOffer = FESTIVE_PACKAGE) {
   return {
     "@context": "https://schema.org",
     "@type": "Offer",
-    name: FESTIVE_PACKAGE.title,
-    description: FESTIVE_PACKAGE.description,
-    price: FESTIVE_PACKAGE.price.replace(/[^0-9.]/g, ""),
+    name: offer.title,
+    description: offer.description,
+    price: offer.price.replace(/[^0-9.]/g, "") || undefined,
     priceCurrency: "GBP",
-    availabilityStarts: FESTIVE_PACKAGE.startDate,
+    availabilityStarts: offer.startDate,
     url: `${SITE_URL}/special-offers`,
     seller: { "@id": ORGANIZATION_ID },
   };

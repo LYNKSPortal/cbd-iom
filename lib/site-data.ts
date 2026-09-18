@@ -234,7 +234,20 @@ export const SOCIAL_LINKS = [
   { label: "Facebook", href: "https://facebook.com/coachedbydebs", handle: "Coached by Debs" },
 ];
 
-export const FESTIVE_PACKAGE = {
+export type SpecialOffer = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  longDescription: string;
+  price: string;
+  cadence: string;
+  features: string[];
+  availability: string;
+  // Static ISO date string; countdown component computes remaining time client-side.
+  startDate?: string;
+};
+
+export const FESTIVE_PACKAGE: SpecialOffer = {
   eyebrow: "Starts 1st October",
   title: "The 8-Week Festive Shred",
   description:
@@ -251,6 +264,24 @@ export const FESTIVE_PACKAGE = {
     "Head into December feeling confident, not guilty",
   ],
   availability: "1st October – 26th November · 8 Weeks · Limited Spots",
-  // Static ISO date string; countdown component computes remaining time client-side.
   startDate: "2026-10-01T06:00:00",
+};
+
+// Placeholder copy — update once real Couples Package details are confirmed.
+export const COUPLES_PACKAGE: SpecialOffer = {
+  eyebrow: "Coming Soon",
+  title: "The Couples Package",
+  description:
+    "Train together, stay accountable together — a coaching package built for two, coming soon.",
+  longDescription:
+    "Whether you're both just getting started or already love training, The Couples Package brings you and your partner together for shared sessions, shared accountability, and shared results. One programme, built around both of you, so you can push each other on and celebrate the wins together.",
+  price: "TBC",
+  cadence: "/ package",
+  features: [
+    "Shared 1-to-1 training sessions for two",
+    "A programme personalised to both of you",
+    "Joint accountability & check-ins",
+    "Flexible scheduling that fits you both",
+  ],
+  availability: "Coming Soon — Details TBC",
 };
