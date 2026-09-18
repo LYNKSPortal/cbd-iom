@@ -271,13 +271,12 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
   startDate: "2026-10-01T06:00:00",
 };
 
-// Placeholder image — update once the real couples photo is provided.
 export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Two For The Price Of One!",
   title: "Couple Training Package",
   description:
     "Take advantage of our special couples training offer — when one partner signs up, the other trains free.",
-  image: "/image-of-debs.jpg",
+  image: "/couples-training-package.jpg",
   imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
     "Take advantage of our special couples training offer. When one partner purchases a training package, the other partner receives the same package completely free! Train together, stay motivated, and reach your goals for the price of one.",
