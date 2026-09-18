@@ -257,8 +257,8 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
     "8 weeks, starting 1st October and finishing 26th November, just in time for the Christmas parties. Go into December feeling confident, not guilty.",
   longDescription:
     "This isn't about dieting through Christmas or saying no to all the good stuff, quite the opposite. It's about going into December already feeling good: confident putting on that Christmas party dress, comfortable in your jeans, and back in your routine. 8 weeks is plenty of time to make a really noticeable difference when you're consistent, and we'll be done by 26th November, just in time for the parties, meals, drinks, and celebrations to begin. Don't hit December wishing you'd started 8 weeks ago.",
-  price: "£175",
-  cadence: "/ For Both",
+  price: "£295",
+  cadence: "/ 8-week programme",
   features: [
     "8 weeks of structured 1-to-1 or online coaching",
     "Realistic, sustainable approach — no crash dieting",
@@ -276,13 +276,13 @@ export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Two For The Price Of One!",
   title: "Couple Training Package",
   description:
-    "Take advantage of our special couples training offer — buy the 8-week plan for £295 and your partner trains free. Ends 31st December.",
+    "Take advantage of our special couples training offer — buy the 8-week plan for £175 and your partner trains free. Ends 31st December.",
   image: "/couples-training-package.jpg",
   imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
-    "Take advantage of our special couples training offer. Purchase our 8-week training plan for £295 and the other partner receives the same 8-week plan completely free! Train together, stay motivated, and reach your goals for the price of one. Offer ends 31st December.",
-  price: "£295",
-  cadence: "/ 8-week plan, for both of you",
+    "Take advantage of our special couples training offer. Purchase our 8-week training plan for £175 and the other partner receives the same 8-week plan completely free! Train together, stay motivated, and reach your goals for the price of one. Offer ends 31st December.",
+  price: "£175",
+  cadence: "/ For Both",
   endDate: "2026-12-31T23:59:59",
   features: [
     "8-week training plan for both of you",
