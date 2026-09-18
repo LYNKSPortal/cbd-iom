@@ -243,6 +243,8 @@ export type SpecialOffer = {
   cadence: string;
   features: string[];
   availability: string;
+  image: string;
+  imageAlt: string;
   // Static ISO date string; countdown component computes remaining time client-side.
   startDate?: string;
 };
@@ -264,15 +266,19 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
     "Head into December feeling confident, not guilty",
   ],
   availability: "1st October – 26th November · 8 Weeks · Limited Spots",
+  image: "/festive-package-img.jpg",
+  imageAlt: "The 8-Week Festive Shred with Coached by Debs",
   startDate: "2026-10-01T06:00:00",
 };
 
-// Placeholder copy — update once real Couples Package details are confirmed.
+// Placeholder copy/image — update once real Couples Package details are confirmed.
 export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Coming Soon",
   title: "The Couples Package",
   description:
     "Train together, stay accountable together — a coaching package built for two, coming soon.",
+  image: "/image-of-debs.jpg",
+  imageAlt: "The Couples Package with Coached by Debs",
   longDescription:
     "Whether you're both just getting started or already love training, The Couples Package brings you and your partner together for shared sessions, shared accountability, and shared results. One programme, built around both of you, so you can push each other on and celebrate the wins together.",
   price: "TBC",
