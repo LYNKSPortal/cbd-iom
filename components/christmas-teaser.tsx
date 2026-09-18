@@ -47,14 +47,14 @@ export function ChristmasTeaser() {
           <Reveal delay={0.3}>
             <div className="mt-9 flex flex-col sm:flex-row gap-4">
               <Button
-                render={<Link href="/festive-package" />}
+                render={<Link href="/special-offers" />}
                 nativeButton={false}
                 className="rounded-none bg-gold text-black hover:bg-gold-light uppercase text-xs tracking-[0.15em] h-12 px-8"
               >
                 Claim My Festive Spot
               </Button>
               <Button
-                render={<Link href="/festive-package" />}
+                render={<Link href="/special-offers" />}
                 nativeButton={false}
                 variant="outline"
                 className="rounded-none border-ivory/30 text-ivory hover:bg-ivory hover:text-black bg-transparent uppercase text-xs tracking-[0.15em] h-12 px-8"

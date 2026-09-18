@@ -20,10 +20,10 @@ const SERVICES = [
   },
   {
     icon: CalendarHeart,
-    label: "Upcoming Events",
-    blurb: "Live masterclasses, challenges, and retreats to accelerate your progress.",
-    meta: "New dates added monthly",
-    href: "/events",
+    label: "Special Offers",
+    blurb: "Limited-time offers and challenges to accelerate your progress.",
+    meta: "New offers added regularly",
+    href: "/special-offers",
   },
   {
     icon: Sparkles,

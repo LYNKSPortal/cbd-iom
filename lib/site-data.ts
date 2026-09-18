@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
   { label: "Personal Training", href: "/personal-training" },
   { label: "Online Coaching", href: "/online-coaching" },
-  { label: "Events", href: "/events" },
+  { label: "Special Offers", href: "/special-offers" },
   { label: "Results", href: "/results" },
   { label: "About", href: "/about" },
   { label: "Pricing", href: "/pricing" },
@@ -138,28 +138,6 @@ export const ONLINE_COACHING_PACKAGES: Package[] = [
   },
 ];
 
-export type EventItem = {
-  title: string;
-  date: string;
-  location: string;
-  description: string;
-  image?: string;
-  spots: string;
-};
-
-// Static ISO date strings; countdown component computes remaining time client-side.
-export const UPCOMING_EVENTS: EventItem[] = [
-  {
-    title: "Little Christmas Shred — Coming Soon",
-    date: "2026-10-01T06:00:00",
-    location: "Online & In-Studio",
-    description:
-      "An 8-week cut starting 1st October, designed to get you feeling confident and back in your routine before the festive season begins.",
-    image: "/festive-package-img.jpg",
-    spots: "Coming soon",
-  },
-];
-
 export type Testimonial = {
   name: string;
   result: string;
@@ -256,7 +234,6 @@ export const SOCIAL_LINKS = [
   { label: "Facebook", href: "https://facebook.com/coachedbydebs", handle: "Coached by Debs" },
 ];
 
-// Price still TBC — update once confirmed.
 export const FESTIVE_PACKAGE = {
   eyebrow: "Starts 1st October",
   title: "The 8-Week Festive Shred",
@@ -274,4 +251,6 @@ export const FESTIVE_PACKAGE = {
     "Head into December feeling confident, not guilty",
   ],
   availability: "1st October – 26th November · 8 Weeks · Limited Spots",
+  // Static ISO date string; countdown component computes remaining time client-side.
+  startDate: "2026-10-01T06:00:00",
 };

@@ -1,8 +1,19 @@
+import Link from "next/link";
 import { Check } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { Button } from "@/components/ui/button";
+import { CountdownTimer } from "@/components/countdown-timer";
 import { FESTIVE_PACKAGE } from "@/lib/site-data";
 
-export function FestiveOffer() {
+export function FestiveOffer({
+  showCountdown = false,
+  ctaHref,
+  ctaLabel = "Enquire Now",
+}: {
+  showCountdown?: boolean;
+  ctaHref?: string;
+  ctaLabel?: string;
+}) {
   return (
     <section className="section-padding py-16 md:py-20 bg-black">
       <Reveal>
@@ -26,6 +37,12 @@ export function FestiveOffer() {
             </span>
           </div>
 
+          {showCountdown && (
+            <div className="mt-6">
+              <CountdownTimer target={FESTIVE_PACKAGE.startDate} />
+            </div>
+          )}
+
           <div className="gold-divider my-6" />
 
           <ul className="flex flex-col gap-3">
@@ -36,6 +53,16 @@ export function FestiveOffer() {
               </li>
             ))}
           </ul>
+
+          {ctaHref && (
+            <Button
+              render={<Link href={ctaHref} />}
+              nativeButton={false}
+              className="mt-8 w-full rounded-none bg-gold text-black hover:bg-gold-light uppercase text-xs tracking-[0.15em] h-12"
+            >
+              {ctaLabel}
+            </Button>
+          )}
         </div>
       </Reveal>
     </section>

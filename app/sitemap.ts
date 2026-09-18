@@ -6,7 +6,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: "daily" | "week
   { path: "/personal-training", priority: 0.9, changeFrequency: "monthly" },
   { path: "/online-coaching", priority: 0.9, changeFrequency: "monthly" },
   { path: "/pricing", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/events", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/special-offers", priority: 0.8, changeFrequency: "weekly" },
   { path: "/results", priority: 0.8, changeFrequency: "weekly" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/faq", priority: 0.6, changeFrequency: "monthly" },

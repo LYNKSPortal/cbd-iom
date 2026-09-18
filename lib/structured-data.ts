@@ -1,10 +1,10 @@
 import {
   FAQS,
+  FESTIVE_PACKAGE,
   ONLINE_COACHING_PACKAGES,
   PERSONAL_TRAINING_PACKAGES,
   SOCIAL_LINKS,
   TESTIMONIALS,
-  UPCOMING_EVENTS,
   type Package,
 } from "@/lib/site-data";
 
@@ -147,32 +147,18 @@ export function getFAQPageSchema() {
   };
 }
 
-export function getEventsSchema() {
-  return UPCOMING_EVENTS.map((event) => ({
+export function getSpecialOfferSchema() {
+  return {
     "@context": "https://schema.org",
-    "@type": "Event",
-    name: event.title,
-    startDate: event.date,
-    eventAttendanceMode:
-      event.location.toLowerCase().includes("online")
-        ? "https://schema.org/OnlineEventAttendanceMode"
-        : "https://schema.org/OfflineEventAttendanceMode",
-    eventStatus: "https://schema.org/EventScheduled",
-    description: event.description,
-    location: event.location.toLowerCase().includes("online")
-      ? { "@type": "VirtualLocation", url: `${SITE_URL}/events` }
-      : {
-          "@type": "Place",
-          name: event.location,
-          address: { "@type": "PostalAddress", addressRegion: event.location },
-        },
-    organizer: { "@id": ORGANIZATION_ID },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      url: `${SITE_URL}/contact`,
-    },
-  }));
+    "@type": "Offer",
+    name: FESTIVE_PACKAGE.title,
+    description: FESTIVE_PACKAGE.description,
+    price: FESTIVE_PACKAGE.price.replace(/[^0-9.]/g, ""),
+    priceCurrency: "GBP",
+    availabilityStarts: FESTIVE_PACKAGE.startDate,
+    url: `${SITE_URL}/special-offers`,
+    seller: { "@id": ORGANIZATION_ID },
+  };
 }
 
 export function getReviewsSchema() {
