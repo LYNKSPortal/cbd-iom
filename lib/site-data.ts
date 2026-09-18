@@ -274,13 +274,13 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
 // Placeholder copy/image — update once real Couples Package details are confirmed.
 export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Coming Soon",
-  title: "The Couples Package",
+  title: "Couple Training Package",
   description:
     "Train together, stay accountable together — a coaching package built for two, coming soon.",
   image: "/image-of-debs.jpg",
-  imageAlt: "The Couples Package with Coached by Debs",
+  imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
-    "Whether you're both just getting started or already love training, The Couples Package brings you and your partner together for shared sessions, shared accountability, and shared results. One programme, built around both of you, so you can push each other on and celebrate the wins together.",
+    "Whether you're both just getting started or already love training, the Couple Training Package brings you and your partner together for shared sessions, shared accountability, and shared results. One programme, built around both of you, so you can push each other on and celebrate the wins together.",
   price: "TBC",
   cadence: "/ package",
   features: [

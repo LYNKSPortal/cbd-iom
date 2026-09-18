@@ -45,7 +45,7 @@ export default function SpecialOffersPage() {
       <section className="section-padding pt-8 md:pt-12 bg-charcoal">
         <SectionHeading
           eyebrow="Coming Soon"
-          title="The Couples Package"
+          title="Couple Training Package"
           description="Train together, stay accountable together — details coming soon."
         />
       </section>
