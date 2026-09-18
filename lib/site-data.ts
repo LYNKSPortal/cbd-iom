@@ -276,18 +276,18 @@ export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Two For The Price Of One!",
   title: "Couple Training Package",
   description:
-    "Take advantage of our special couples training offer — when one partner signs up, the other trains free. Ends 31st December.",
+    "Take advantage of our special couples training offer — buy the 8-week plan for £295 and your partner trains free. Ends 31st December.",
   image: "/couples-training-package.jpg",
   imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
-    "Take advantage of our special couples training offer. When one partner purchases a training package, the other partner receives the same package completely free! Train together, stay motivated, and reach your goals for the price of one. Offer ends 31st December.",
-  price: "2-for-1",
-  cadence: "on any training package",
+    "Take advantage of our special couples training offer. Purchase our 8-week training plan for £295 and the other partner receives the same 8-week plan completely free! Train together, stay motivated, and reach your goals for the price of one. Offer ends 31st December.",
+  price: "£295",
+  cadence: "/ 8-week plan, for both of you",
   endDate: "2026-12-31T23:59:59",
   features: [
+    "8-week training plan for both of you",
     "One partner purchases, the other trains free",
     "Train together and stay motivated",
-    "Works with any training package",
     "Reach your goals together, for the price of one",
   ],
   availability: "Two For The Price Of One! · Ends 31st December",
