@@ -257,8 +257,8 @@ export const FESTIVE_PACKAGE: SpecialOffer = {
     "8 weeks, starting 1st October and finishing 26th November, just in time for the Christmas parties. Go into December feeling confident, not guilty.",
   longDescription:
     "This isn't about dieting through Christmas or saying no to all the good stuff, quite the opposite. It's about going into December already feeling good: confident putting on that Christmas party dress, comfortable in your jeans, and back in your routine. 8 weeks is plenty of time to make a really noticeable difference when you're consistent, and we'll be done by 26th November, just in time for the parties, meals, drinks, and celebrations to begin. Don't hit December wishing you'd started 8 weeks ago.",
-  price: "£295",
-  cadence: "/ 8-week programme",
+  price: "£175",
+  cadence: "/ For Both",
   features: [
     "8 weeks of structured 1-to-1 or online coaching",
     "Realistic, sustainable approach — no crash dieting",
