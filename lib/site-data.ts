@@ -245,8 +245,9 @@ export type SpecialOffer = {
   availability: string;
   image: string;
   imageAlt: string;
-  // Static ISO date string; countdown component computes remaining time client-side.
+  // Static ISO date strings; countdown component computes remaining time client-side.
   startDate?: string;
+  endDate?: string;
 };
 
 export const FESTIVE_PACKAGE: SpecialOffer = {
@@ -275,18 +276,19 @@ export const COUPLES_PACKAGE: SpecialOffer = {
   eyebrow: "Two For The Price Of One!",
   title: "Couple Training Package",
   description:
-    "Take advantage of our special couples training offer — when one partner signs up, the other trains free.",
+    "Take advantage of our special couples training offer — when one partner signs up, the other trains free. Ends 31st December.",
   image: "/couples-training-package.jpg",
   imageAlt: "Couple Training Package with Coached by Debs",
   longDescription:
-    "Take advantage of our special couples training offer. When one partner purchases a training package, the other partner receives the same package completely free! Train together, stay motivated, and reach your goals for the price of one.",
+    "Take advantage of our special couples training offer. When one partner purchases a training package, the other partner receives the same package completely free! Train together, stay motivated, and reach your goals for the price of one. Offer ends 31st December.",
   price: "2-for-1",
   cadence: "on any training package",
+  endDate: "2026-12-31T23:59:59",
   features: [
     "One partner purchases, the other trains free",
     "Train together and stay motivated",
     "Works with any training package",
     "Reach your goals together, for the price of one",
   ],
-  availability: "Two For The Price Of One!",
+  availability: "Two For The Price Of One! · Ends 31st December",
 };

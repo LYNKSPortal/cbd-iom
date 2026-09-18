@@ -51,6 +51,7 @@ export default function SpecialOffersPage() {
       </section>
       <OfferCard
         offer={COUPLES_PACKAGE}
+        showCountdown
         ctaHref="/contact"
         ctaLabel="Sign Up With Us Now!"
         variant="charcoal"

@@ -55,9 +55,12 @@ export function OfferCard({
               <span className="text-sm text-muted-foreground">{offer.cadence}</span>
             </div>
 
-            {showCountdown && offer.startDate && (
+            {showCountdown && (offer.endDate ?? offer.startDate) && (
               <div className="mt-6">
-                <CountdownTimer target={offer.startDate} />
+                <span className="block text-[10px] uppercase tracking-[0.15em] text-ivory/50 mb-2">
+                  {offer.endDate ? "Offer Ends In" : "Starts In"}
+                </span>
+                <CountdownTimer target={(offer.endDate ?? offer.startDate) as string} />
               </div>
             )}
 
