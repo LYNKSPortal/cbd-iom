@@ -3,7 +3,9 @@ import { Playfair_Display, Inter } from "next/font/google";
 import { NavBar } from "@/components/nav-bar";
 import { Footer } from "@/components/footer";
 import { JsonLd } from "@/components/json-ld";
+import { MaintenanceScreen } from "@/components/maintenance-screen";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/structured-data";
+import { MAINTENANCE_MODE } from "@/lib/config";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -91,7 +93,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <JsonLd data={[getOrganizationSchema(), getWebSiteSchema()]} />
         <NavBar />
-        <main className="flex-1 bg-black">{children}</main>
+        <main className="flex-1 bg-black flex flex-col">
+          {MAINTENANCE_MODE ? <MaintenanceScreen /> : children}
+        </main>
         <Footer />
       </body>
     </html>
